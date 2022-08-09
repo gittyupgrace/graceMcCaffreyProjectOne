@@ -7,21 +7,54 @@
     <title>Sophie</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#home" class="logo">Sophie</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-        <div>
-            <h2>It's All About</h2>
-            <h1>Sophie</h1>
-            <div class="headerImg"><img src="./assets/home-image-1.jpg" alt="A girl with blonde hair and space buns wearing an orange sweater holds two round slices of orange over her eyes and sticks out her tongue, making a goofy expression."></div>
-        </div>
+    <header id="home">
+        <div class="wrapper">
+            <nav class="headerNav">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#home" class="logo">Sophie</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div>
+                <h3>It's All About</h3>
+                <h1>Sophie</h1>
+                <div class="headerImg"><img src="./assets/home-image-1.jpg" alt="A girl with blonde hair and space buns wearing an orange sweater holds two round slices of orange over her eyes and sticks out her tongue, making a goofy expression."></div>
+            </div>
+        </div> <!--END of wrapper-->
     </header>
+
+    <main>
+        <section class="about" id="about">
+            <div class="aboutIntro wrapper">
+                <h2>Who Is Sophie?</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur vitae corporis inventore excepturi rerum. Nisi perferendis, fugiat distinctio itaque delectus eius deserunt, necessitatibus cupiditate quibusdam cumque, asperiores nesciunt aperiam! Facere, nobis molestiae minima nam enim in eum laborum aspernatur sint odio laudantium quidem accusamus autem asperiores deleniti exercitationem aperiam maiores.</p>
+                <a href="#">Find Out More</a>
+            </div>
+            <div>
+                <ul class="aboutPosts wrapper">
+                    <li>
+                        <div><img src="./assets/home-image-2.jpg" alt="A long-haired brown dog pokes its head out the window of an orange vintage car."></div>
+                        <div>
+                            <h3>Sophie's Favourite Things</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque temporibus, explicabo commodi quaerat itaque adipisci odio architecto non quisquam possimus exercitationem nesciunt ex accusamus enim rem quos animi placeat ea quidem sunt aut eligendi officia?</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div><img src="./assets/home-image-3.jpg" alt="A white sand beach with rows of bright blue beach chairs and big orange sun umbrellas."></div>
+                        <div>
+                            <h3>Where She's Travelled</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At ab, fuga, quidem ad doloribus ducimus, sint porro id earum repellendus expedita quaerat accusamus qui. Aut delectus nam cum nesciunt corrupti voluptate inventore, quaerat vel fuga.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        
+    </main>
 </body>
 </html>
