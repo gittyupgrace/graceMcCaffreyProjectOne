@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
+    <a href="#mainContent" class="skipLink">Skip to main content</a>
+
     <nav class="headerNav">
         <ul class="wrapper">
-            <li><a href="#home">Home</a></li>
+            <li><a href="./index.html">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#home" class="logo"><h1>Sophie</h1></a></li>
             <li><a href="./blog.html">Blog</a></li>
@@ -18,14 +20,14 @@
         </ul>
     </nav>
 
-    <header>
+    <header class="blogHeader">
         <div class="wrapper">
             <h2>Blog</h2>
         </div>
     </header>
 
-    <main>
-        <section>
+    <main class="blogMain mainContent">
+        <section class="wrapper">
             <div>
                 <div><img src="./assets/blog-image-2.jpg" alt="A girl with blonde hair and space buns wearing an orange sweater holds two round slices of orange over her eyes and sticks out her tongue, making a goofy expression."></div>
                 <h3>About Sophie</h3>
@@ -42,7 +44,7 @@
             </aside>
         </section>
 
-        <section>
+        <section class="wrapper">
             <div>
                 <h4>Why I became a blogger</h4>
                 <p>Monday October 8th, 2018 by <a href="#">Sophie Barlow</a></p>
@@ -50,7 +52,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="wrapper">
             <div>
                 <div><img src="./assets/blog-image-3.jpg" alt="A portarit of a man sitting in an orange chair, wearing a navy blue dress shirt with white polka dots."></div>
                 <a href="#">Tuesday October 9th, 2018 by Jeremy</a>
@@ -63,7 +65,7 @@
             </div>
         </section>
 
-        <section>
+        <section class="wrapper">
             <form action="" method="" class="commentForm" name="commentForm">
                 <label for="name" class="sr-only">Name</label>
                 <input type="text" id="name" placeholder="Name">
