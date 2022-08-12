@@ -309,8 +309,8 @@ h1 {
 }
 
 h2 {
-  font-size: 80px;
-  font-size: 4rem;
+  font-size: 100px;
+  font-size: 5rem;
   line-height: 92px;
   letter-spacing: 0;
 }
@@ -343,4 +343,31 @@ h2 {
 }
 .headerNav h1 {
   margin: 8px;
+}
+
+header {
+  min-height: 70vh;
+}
+
+.homepageHeader {
+  background-color: rgb(246, 168, 35);
+}
+.homepageHeader .homepageHeaderFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.homepageHeader .headerImgPosition {
+  -webkit-box-shadow: 15px 15px white;
+          box-shadow: 15px 15px white;
+  position: absolute;
+  bottom: -250px;
+  right: 45px;
 }

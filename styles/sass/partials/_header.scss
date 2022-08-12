@@ -1,0 +1,30 @@
+header {
+    min-height: 70vh;
+}
+
+.homepageHeader {
+    background-color: $primaryBackground;
+
+    .homepageHeaderFlex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+    }
+
+    // .headerTextPosition {
+    //     position: relative;
+
+    //     img {
+
+    //     }
+    // }
+
+    .headerImgPosition {
+   
+        box-shadow: 15px 15px $white;
+        position: absolute;
+        bottom: -250px;
+        right: 45px;
+    }
+}
