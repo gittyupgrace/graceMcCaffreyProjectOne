@@ -260,6 +260,7 @@ img {
 a {
   text-decoration: none;
   display: inline-block;
+  color: inherit;
 }
 
 ul {
@@ -272,4 +273,48 @@ ul {
   max-width: 1280px;
   width: 85%;
   margin: 0 auto;
+}
+
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+  color: rgb(44, 44, 44);
+  line-height: 32px;
+  letter-spacing: 0;
+}
+
+h1,
+h2 {
+  font-family: "Lora", serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+.button,
+.headerNav {
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 24px;
+  font-size: 1.2rem;
+}
+
+h2 {
+  font-size: 80px;
+  font-size: 4rem;
+  line-height: 92px;
+  letter-spacing: 0;
+}
+
+.button {
+  text-align: center;
 }

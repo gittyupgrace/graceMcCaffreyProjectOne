@@ -1,0 +1,43 @@
+html {
+    font-size: 125%;
+}
+
+body {
+    font-family: $mainFont;
+    font-size: $bodyFontSize;
+    color: $first;
+    line-height: 32px;
+    letter-spacing: 0;
+}
+
+h1,
+h2 {
+    font-family: $headerFont;
+}
+
+h2, 
+h3, 
+h4, 
+h5, 
+.button, 
+.headerNav {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+h1 {
+    @include fontSize(24);
+}
+
+h2 {
+    @include fontSize(80);
+    line-height: 92px;
+    letter-spacing: 0;
+}
+
+.button {
+    text-align: center;
+}
+
+
