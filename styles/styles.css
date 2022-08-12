@@ -304,8 +304,8 @@ h5,
 }
 
 h1 {
-  font-size: 24px;
-  font-size: 1.2rem;
+  font-size: 32px;
+  font-size: 1.6rem;
 }
 
 h2 {
@@ -317,4 +317,30 @@ h2 {
 
 .button {
   text-align: center;
+}
+
+.highlightLink {
+  color: rgb(246, 246, 246);
+}
+
+.headerNav {
+  background-color: rgb(246, 168, 35);
+}
+.headerNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.headerNav a {
+  padding: 15px 10px;
+  margin: 5px 10px;
+}
+.headerNav h1 {
+  margin: 8px;
 }

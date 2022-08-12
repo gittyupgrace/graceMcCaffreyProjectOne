@@ -27,7 +27,7 @@ h5,
 }
 
 h1 {
-    @include fontSize(24);
+    @include fontSize(32);
 }
 
 h2 {
@@ -40,4 +40,7 @@ h2 {
     text-align: center;
 }
 
+.highlightLink {
+    color: $second;
+}
 
