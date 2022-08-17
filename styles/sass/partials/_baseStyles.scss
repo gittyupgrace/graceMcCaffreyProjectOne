@@ -1,5 +1,5 @@
 section {
-    margin: 50px 0;
+    padding: 50px 0;
 }
 
 img {
@@ -25,3 +25,14 @@ ul {
     margin: 0 auto;
 }
 
+.button {
+    background-color: $primaryAccent;
+    padding: 8px 30px;
+    margin: 15px 0;
+    transition: 0.3s;
+
+    &:hover, 
+    &:focus {
+        background-color: $primaryBackground;
+    }
+}

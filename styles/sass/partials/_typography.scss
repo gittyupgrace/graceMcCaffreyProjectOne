@@ -36,6 +36,14 @@ h2 {
     letter-spacing: 0;
 }
 
+h3 {
+    @include fontSize(42);
+}
+
+h4 {
+    @include fontSize(32);
+}
+
 .button {
     text-align: center;
 }

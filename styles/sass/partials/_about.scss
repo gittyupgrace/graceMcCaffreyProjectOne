@@ -1,10 +1,57 @@
 .about {
     background-color: $secondaryBackground;
+    padding-bottom: 0;
+}
+
+.aboutIntro {
+    padding: 40px 200px 100px 0;
 }
 
 .aboutPosts {
+    background-color: $white;
 
-    li{
+    .aboutPostsFlex {
         display: flex;
+        justify-content: space-between;
+
+        div {
+            width: calc(49% - 25px);
+        }
+    }
+
+    .aboutPosts2 {
+        flex-direction: row-reverse;
+    }
+
+    .aboutPostsImg1 {
+
+        position: relative;
+        
+        img {
+            position: absolute;
+            top: -35px;
+            box-shadow: 15px 15px $secondaryAccent, -200px 15px $secondaryAccent;
+        }
+    }
+
+    .aboutPostsImg2 {
+    
+        position: relative;
+    
+        img {
+            position: absolute;
+            top: 0;
+            box-shadow: 150px 15px $primaryBackground, 20px 15px $primaryBackground;
+        }
+    }
+
+    .aboutPostsContent1 {
+        margin-left: 25px;
+        margin-bottom: 45px;
+    }
+
+    .aboutPostsContent2 {
+        text-align: right;
+        margin-right: 25px;
     }
 }
