@@ -459,3 +459,31 @@ header {
   text-align: right;
   margin-right: 25px;
 }
+
+.mainNav {
+  background-color: rgba(189, 188, 186, 0.188);
+}
+.mainNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.mainNav ul li {
+  padding: 35px;
+}
+
+.iconPosition {
+  position: relative;
+}
+
+.icon {
+  background-color: rgb(246, 168, 35);
+  border-radius: 50%;
+  padding: 16px;
+  position: absolute;
+  left: -75px;
+  top: 35px;
+}
