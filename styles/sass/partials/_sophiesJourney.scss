@@ -1,0 +1,20 @@
+.sophiesJourney {
+    background-color: $secondaryBackground;
+}
+
+.journeyFlex {
+    display: flex;
+    justify-content: space-between;
+    margin: 75px auto 30px;
+}
+
+.journeyImg {
+    width: 30%;
+    margin: 50px;
+    box-shadow: 15px 15px $primaryBackground;
+}
+
+.journeyContent {
+    width: 70%;
+    padding: 20px 50px 0;
+}

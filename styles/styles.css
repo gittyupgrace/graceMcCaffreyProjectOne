@@ -487,3 +487,29 @@ header {
   left: -75px;
   top: 35px;
 }
+
+.sophiesJourney {
+  background-color: rgba(189, 188, 186, 0.188);
+}
+
+.journeyFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 75px auto 30px;
+}
+
+.journeyImg {
+  width: 30%;
+  margin: 50px;
+  -webkit-box-shadow: 15px 15px rgb(246, 168, 35);
+          box-shadow: 15px 15px rgb(246, 168, 35);
+}
+
+.journeyContent {
+  width: 70%;
+  padding: 20px 50px 0;
+}
