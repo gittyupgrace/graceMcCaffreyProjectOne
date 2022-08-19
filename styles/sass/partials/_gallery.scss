@@ -1,0 +1,14 @@
+.gallery {
+
+    ul {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 30px auto;
+
+        li {
+            padding: 15px;
+            max-width: calc(33% - 15px);
+        }
+    }
+}

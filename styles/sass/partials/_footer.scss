@@ -1,0 +1,19 @@
+footer {
+
+    p {
+    color: $white;
+    background-color: $first;
+    text-align: center;
+    padding: 5px 0;
+    margin-bottom: 0;
+    }
+
+    a {
+        transition: 0.3s;
+
+        &:hover,
+        &:focus {
+            color: $primaryAccent;
+        }
+    }
+}

@@ -513,3 +513,34 @@ header {
   width: 70%;
   padding: 20px 50px 0;
 }
+
+.gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 30px auto;
+}
+.gallery ul li {
+  padding: 15px;
+  max-width: calc(33% - 15px);
+}
+
+footer p {
+  color: white;
+  background-color: rgb(44, 44, 44);
+  text-align: center;
+  padding: 5px 0;
+  margin-bottom: 0;
+}
+footer a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+footer a:hover, footer a:focus {
+  color: rgb(12, 210, 232);
+}
