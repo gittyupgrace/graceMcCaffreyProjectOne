@@ -330,6 +330,12 @@ h2 {
   letter-spacing: 0;
 }
 
+.contactHeader h2,
+.blogHeader h2 {
+  font-size: 90px;
+  font-size: 4.5rem;
+}
+
 h3 {
   font-size: 42px;
   font-size: 2.1rem;
@@ -370,12 +376,9 @@ h4 {
   margin: 8px;
 }
 
-header {
-  min-height: 90vh;
-}
-
 .homepageHeader {
   background-color: rgb(246, 168, 35);
+  min-height: 75vh;
 }
 .homepageHeader .homepageHeaderFlex {
   display: -webkit-box;
@@ -402,6 +405,27 @@ header {
   position: absolute;
   top: 50px;
   right: 50px;
+}
+
+.contactHeader {
+  background-image: url(../assets/contact-image-1.jpg);
+}
+
+.blogHeader {
+  background-image: url(../assets/blog-image-1.jpg);
+}
+
+.contactHeader,
+.blogHeader {
+  min-height: 50vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.contactHeader h2,
+.blogHeader h2 {
+  position: absolute;
+  bottom: -115px;
 }
 
 .about {

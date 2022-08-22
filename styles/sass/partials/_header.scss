@@ -1,9 +1,8 @@
-header {
-    min-height: 90vh;
-}
+//Homepage Styling
 
 .homepageHeader {
     background-color: $primaryBackground;
+    min-height: 75vh;
 
     .homepageHeaderFlex {
         display: flex;
@@ -28,5 +27,28 @@ header {
         position: absolute;
         top: 50px;
         right: 50px;
+    }
+}
+
+//Contact Page + Blog Page Styling
+
+.contactHeader {
+    background-image: url(../assets/contact-image-1.jpg);
+}
+
+.blogHeader {
+    background-image: url(../assets/blog-image-1.jpg);
+}
+
+.contactHeader, 
+.blogHeader {
+    min-height: 50vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    h2 {
+        position: absolute;
+        bottom: -115px;
     }
 }

@@ -36,6 +36,11 @@ h2 {
     letter-spacing: 0;
 }
 
+.contactHeader h2, 
+.blogHeader h2 {
+    @include fontSize(90);
+}
+
 h3 {
     @include fontSize(42);
 }
