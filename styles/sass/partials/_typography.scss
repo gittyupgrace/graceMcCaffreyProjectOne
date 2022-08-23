@@ -49,6 +49,12 @@ h4 {
     @include fontSize(32);
 }
 
+::placeholder {
+    font-family: $mainFont;
+    font-style: italic;
+    opacity: 0.75;
+}
+
 .button {
     text-align: center;
 }
@@ -56,4 +62,6 @@ h4 {
 .highlightLink {
     color: $second;
 }
+
+
 

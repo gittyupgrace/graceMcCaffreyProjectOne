@@ -11,7 +11,10 @@
 .journeyImg {
     width: 30%;
     margin: 50px;
-    box-shadow: 15px 15px $primaryBackground;
+
+    img{
+        box-shadow: 15px 15px $primaryBackground;
+    }
 }
 
 .journeyContent {

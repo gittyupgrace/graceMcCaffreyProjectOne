@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/d1b50708a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <a href="#mainContent" class="skipLink">Skip to main content</a>
@@ -29,16 +30,16 @@
         </div>
     </header>
 
-    <main class="contactMain mainContent">
-        <section class="wrapper">
-            <div>
+    <main class="contactPage mainContent">
+        <section class="contactMain wrapper">
+            <div class="contactInfo">
                 <ul class="socialsIcons">
-                    <li>icon</li>
-                    <li>icon</li>
-                    <li>icon</li>
-                    <li>icon</li>
+                    <li><a href="#"><i class="fa-brands fa-facebook-f social"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-twitter social"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-linkedin-in social"></i></a></li>
+                    <li><a href="#"><i class="fa-brands fa-instagram social"></i></a></li>
                 </ul>
-                <ul class="contactInfo">
+                <ul>
                     <li class="emailAddress">info@email.com</li>
                     <li>123 - 456 - 7890</li>
                     <li>123 Queen Street West, Unit 10</li>
@@ -48,16 +49,18 @@
             </div>
 
             <form action="" method="" class="contactForm" name="contactForm">
-                <label for="name" class="sr-only">Name</label>
-                <input type="text" id="name" placeholder="Name">
+                <div class="contactFlex">
+                    <label for="name" class="sr-only">Name</label>
+                    <input type="text" id="name" class="name" placeholder="Name">
 
-                <label for="email" class="sr-only">Email address</label>
-                <input type="email" id="email" placeholder="Email address">
+                    <label for="email" class="sr-only">Email address</label>
+                    <input type="email" id="email" class="email" placeholder="Email address">
+                </div>
 
                 <label for="message" class="sr-only">Message</label>
-                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                <textarea name="message" id="message" class="message" cols="30" rows="10" placeholder="Message"></textarea>
 
-                <button class="button">Submit</button>
+                <button class="button submit">Submit</button>
             </form>
         </section>
     </main>
