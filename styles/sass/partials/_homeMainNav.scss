@@ -1,12 +1,15 @@
 .mainNav {
     background-color: $secondaryBackground;
+    padding: 75px 0;
 
     ul {
         display: flex;
         justify-content: space-between;
 
         li {
-            padding: 35px;
+            min-width: calc(50% - 60px);
+            padding: 15px 30px;
+            margin: 5px 30px;
         }
     }
 }

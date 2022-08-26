@@ -31,7 +31,7 @@ h1 {
 }
 
 h2 {
-    @include fontSize(130);
+    @include fontSize(138);
     line-height: 92px;
     letter-spacing: 0;
 }
@@ -66,6 +66,3 @@ h5 {
 .highlightLink {
     color: $second;
 }
-
-
-

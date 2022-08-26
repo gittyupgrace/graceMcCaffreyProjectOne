@@ -328,8 +328,8 @@ h1 {
 }
 
 h2 {
-  font-size: 130px;
-  font-size: 6.5rem;
+  font-size: 138px;
+  font-size: 6.9rem;
   line-height: 92px;
   letter-spacing: 0;
 }
@@ -422,33 +422,42 @@ h5 {
 
 .homepageHeader {
   background-color: rgb(246, 168, 35);
-  min-height: 75vh;
+  min-height: 80vh;
 }
 .homepageHeader .homepageHeaderFlex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   position: relative;
 }
 .homepageHeader .headerTitle {
-  text-align: left;
-  padding: 0 75px;
-  margin: 150px 0 50px;
+  max-width: calc(60% - 20px);
+  position: relative;
+  margin: 150px 20px 0 0;
+  padding-left: 50px;
+  z-index: 10;
 }
 .homepageHeader .headerTextPosition {
   position: absolute;
-  top: 175px;
+  top: 30px;
   left: 0;
 }
 .homepageHeader .headerImgPosition {
-  -webkit-box-shadow: 15px 15px white;
-          box-shadow: 15px 15px white;
+  max-width: calc(40% - 50px);
+  margin-left: 50px;
   position: absolute;
   top: 50px;
   right: 50px;
+}
+.homepageHeader .headerImgPosition img {
+  -webkit-box-shadow: 15px 15px white;
+          box-shadow: 15px 15px white;
 }
 
 .contactHeader {
@@ -537,6 +546,7 @@ form textarea {
 
 .aboutPosts {
   background-color: white;
+  padding: 20px 0 40px;
 }
 .aboutPosts .aboutPostsFlex {
   display: -webkit-box;
@@ -546,44 +556,50 @@ form textarea {
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-.aboutPosts .aboutPostsFlex div {
-  width: calc(49% - 25px);
-}
-.aboutPosts .aboutPosts2 {
+.aboutPosts .aboutPostsFlex.aboutPosts2 {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
       -ms-flex-direction: row-reverse;
           flex-direction: row-reverse;
 }
-.aboutPosts .aboutPostsImg1 {
+.aboutPosts .aboutPostsFlex div {
+  min-width: calc(50% - 20px);
+}
+.aboutPosts .aboutPostsImg1,
+.aboutPosts .aboutPostsImg2 {
+  margin-right: 10px;
   position: relative;
 }
-.aboutPosts .aboutPostsImg1 img {
+.aboutPosts .aboutPostsImg1 img,
+.aboutPosts .aboutPostsImg2 img {
   position: absolute;
-  top: -35px;
+}
+.aboutPosts .aboutPostsImg1 img {
+  top: -50px;
   -webkit-box-shadow: 15px 15px rgb(168, 39, 6), -200px 15px rgb(168, 39, 6);
           box-shadow: 15px 15px rgb(168, 39, 6), -200px 15px rgb(168, 39, 6);
 }
-.aboutPosts .aboutPostsImg2 {
-  position: relative;
-}
 .aboutPosts .aboutPostsImg2 img {
-  position: absolute;
-  top: 0;
-  -webkit-box-shadow: 150px 15px rgb(246, 168, 35), 20px 15px rgb(246, 168, 35);
-          box-shadow: 150px 15px rgb(246, 168, 35), 20px 15px rgb(246, 168, 35);
+  bottom: -60px;
+  left: -30px;
+  -webkit-box-shadow: 200px 15px rgb(246, 168, 35), 20px 15px rgb(246, 168, 35);
+          box-shadow: 200px 15px rgb(246, 168, 35), 20px 15px rgb(246, 168, 35);
 }
 .aboutPosts .aboutPostsContent1 {
-  margin-left: 25px;
-  margin-bottom: 45px;
+  margin-left: 10px;
+  margin-bottom: 25px;
+  padding-left: 80px;
 }
 .aboutPosts .aboutPostsContent2 {
   text-align: right;
-  margin-right: 25px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding-right: 110px;
 }
 
 .mainNav {
   background-color: rgba(189, 188, 186, 0.188);
+  padding: 75px 0;
 }
 .mainNav ul {
   display: -webkit-box;
@@ -594,7 +610,9 @@ form textarea {
           justify-content: space-between;
 }
 .mainNav ul li {
-  padding: 35px;
+  min-width: calc(50% - 60px);
+  padding: 15px 30px;
+  margin: 5px 30px;
 }
 
 .iconPosition {
@@ -638,20 +656,20 @@ form textarea {
   padding: 20px 50px 0;
 }
 
+.gallery {
+  padding: 75px 0;
+}
 .gallery ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  margin: 30px auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 .gallery ul li {
-  padding: 15px;
-  max-width: calc(33% - 15px);
+  min-width: calc(33% - 40px);
+  margin: 20px;
 }
 
 .contactPage {

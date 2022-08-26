@@ -2,31 +2,39 @@
 
 .homepageHeader {
     background-color: $primaryBackground;
-    min-height: 75vh;
+    min-height: 80vh;
 
     .homepageHeaderFlex {
         display: flex;
+        justify-content: space-between;
         align-items: center;
         position: relative;
     }
 
     .headerTitle {
-        text-align: left;
-        padding: 0 75px;
-        margin: 150px 0 50px;
+        max-width: calc(60% - 20px);
+        position: relative;
+        margin: 150px 20px 0 0;
+        padding-left: 50px;
+        z-index: 10;
     }
 
     .headerTextPosition {
         position: absolute;
-        top: 175px;
+        top: 30px;
         left: 0;
     }
 
     .headerImgPosition {
-        box-shadow: 15px 15px $white;
+        max-width: calc(40% - 50px);
+        margin-left: 50px;
         position: absolute;
         top: 50px;
         right: 50px;
+
+        img {
+            box-shadow: 15px 15px $white;
+        }
     }
 }
 

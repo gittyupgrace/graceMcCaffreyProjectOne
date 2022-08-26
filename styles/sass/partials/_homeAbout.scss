@@ -9,49 +9,58 @@
 
 .aboutPosts {
     background-color: $white;
+    padding: 20px 0 40px;
 
     .aboutPostsFlex {
         display: flex;
         justify-content: space-between;
 
+        &.aboutPosts2 {
+            flex-direction: row-reverse;
+        }
+
         div {
-            width: calc(49% - 25px);
+            min-width: calc(50% - 20px);
         }
     }
 
-    .aboutPosts2 {
-        flex-direction: row-reverse;
+    .aboutPostsImg1, 
+    .aboutPostsImg2 {
+        margin-right: 10px;
+        position: relative;
+
+        img {
+            position: absolute;
+        }
     }
 
     .aboutPostsImg1 {
 
-        position: relative;
-        
         img {
-            position: absolute;
-            top: -35px;
+            top: -50px;
             box-shadow: 15px 15px $secondaryAccent, -200px 15px $secondaryAccent;
         }
     }
-
+    
     .aboutPostsImg2 {
-    
-        position: relative;
-    
+
         img {
-            position: absolute;
-            top: 0;
-            box-shadow: 150px 15px $primaryBackground, 20px 15px $primaryBackground;
+            bottom: -60px;
+            left: -30px;
+            box-shadow: 200px 15px $primaryBackground, 20px 15px $primaryBackground;
         }
     }
 
     .aboutPostsContent1 {
-        margin-left: 25px;
-        margin-bottom: 45px;
+        margin-left: 10px;
+        margin-bottom: 25px;
+        padding-left: 80px;
     }
 
     .aboutPostsContent2 {
         text-align: right;
-        margin-right: 25px;
+        margin-right: 10px;
+        margin-bottom: 20px;
+        padding-right: 110px;
     }
 }

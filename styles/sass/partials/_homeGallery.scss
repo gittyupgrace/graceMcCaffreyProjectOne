@@ -1,14 +1,13 @@
 .gallery {
+    padding: 75px 0;
 
     ul {
         display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        margin: 30px auto;
+        justify-content: space-between;
 
         li {
-            padding: 15px;
-            max-width: calc(33% - 15px);
+            min-width: calc(33% - 40px);
+            margin: 20px;
         }
     }
 }
