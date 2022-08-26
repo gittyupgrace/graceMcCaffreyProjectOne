@@ -1,0 +1,36 @@
+form {
+    display: flex;
+    flex-direction: column;
+
+    &.contactForm {
+        min-width: calc(70% - 20px);
+        margin-left: 20px;
+    }
+    
+    &.commentForm {
+        min-width: 100%;
+    }
+
+    .formFlex {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    input {
+        display: block;
+        border: none;
+    
+        &.name,
+        &.email {
+            padding: 20px;
+            width: 49%;
+        }
+    }
+    
+    textarea {
+        border: none;
+        padding: 20px;
+        margin: 20px 0 10px;
+        resize: none;
+    }
+}

@@ -609,6 +609,45 @@ footer a:hover, footer a:focus {
   color: rgb(12, 210, 232);
 }
 
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+form.contactForm {
+  min-width: calc(70% - 20px);
+  margin-left: 20px;
+}
+form.commentForm {
+  min-width: 100%;
+}
+form .formFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+form input {
+  display: block;
+  border: none;
+}
+form input.name, form input.email {
+  padding: 20px;
+  width: 49%;
+}
+form textarea {
+  border: none;
+  padding: 20px;
+  margin: 20px 0 10px;
+  resize: none;
+}
+
 .contactPage {
   background-color: rgba(189, 188, 186, 0.188);
 }
@@ -627,6 +666,8 @@ footer a:hover, footer a:focus {
   padding: 35px;
   -ms-flex-item-align: start;
       align-self: flex-start;
+  min-width: calc(30% - 20px);
+  margin-right: 20px;
 }
 .contactMain .contactInfo .emailAddress {
   font-weight: bold;
@@ -651,40 +692,6 @@ footer a:hover, footer a:focus {
   font-size: 1.4rem;
 }
 
-.contactForm {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  width: 70%;
-  margin-left: 20px;
-}
-.contactForm .formFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.contactForm input {
-  display: block;
-  border: none;
-}
-.contactForm input.name, .contactForm input.email {
-  padding: 20px;
-  width: 49%;
-}
-.contactForm textarea {
-  border: none;
-  padding: 20px;
-  margin: 20px 0 10px;
-  resize: none;
-}
-
 .blogMain {
   background-color: rgba(189, 188, 186, 0.188);
 }
@@ -701,7 +708,7 @@ footer a:hover, footer a:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 90px 0;
+  padding: 80px 0;
 }
 
 .blogAbout,
@@ -754,37 +761,4 @@ footer a:hover, footer a:focus {
 .blogPageContent .comment .commentContent {
   min-width: calc(85% - 10px);
   margin-left: 10px;
-}
-
-.commentForm {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  min-width: 100%;
-}
-.commentForm .formFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-.commentForm input {
-  display: block;
-  border: none;
-}
-.commentForm input.name, .commentForm input.email {
-  padding: 20px;
-  width: 49%;
-}
-.commentForm textarea {
-  border: none;
-  padding: 20px;
-  margin: 20px 0 10px;
-  resize: none;
 }

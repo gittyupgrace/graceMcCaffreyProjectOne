@@ -15,7 +15,7 @@
 
 .blogFlex {
     display: flex;
-    padding: 90px 0;
+    padding: 80px 0;
 }
 
 .blogAbout,
@@ -78,37 +78,5 @@
             margin-left: 10px;
         }
 
-    }
-}
-
-
-.commentForm {
-    display: flex;
-    flex-direction: column;
-    min-width: 100%;
-
-
-    .formFlex {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    input {
-
-        display: block;
-        border: none;
-
-        &.name,
-        &.email {
-            padding: 20px;
-            width: 49%;
-        }
-    }
-
-    textarea {
-        border: none;
-        padding: 20px;
-        margin: 20px 0 10px;
-        resize: none;
     }
 }

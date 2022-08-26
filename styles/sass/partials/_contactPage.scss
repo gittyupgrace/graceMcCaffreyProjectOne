@@ -11,6 +11,8 @@
         background-color: $white;
         padding: 35px;
         align-self: flex-start;
+        min-width: calc(30% - 20px);
+        margin-right: 20px;
 
         .emailAddress {
             font-weight: bold;
@@ -35,36 +37,4 @@
                 @include fontSize(28);
             }
         }
-}
-
-.contactForm {
-    display: flex;
-    flex-direction: column;
-    width: 70%;
-    margin-left: 20px;
-
-
-    .formFlex {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    input {
-
-        display: block;
-        border: none;
-
-        &.name, 
-        &.email {
-            padding: 20px;
-            width: 49%;
-        }
-    }
-
-    textarea {
-        border: none;
-        padding: 20px;
-        margin: 20px 0 10px;
-        resize: none;
-    }
 }
