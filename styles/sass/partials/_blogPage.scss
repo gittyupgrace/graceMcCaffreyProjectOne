@@ -48,6 +48,12 @@
             &::marker {
                 color: $primaryBackground;
             }
+
+            a {
+                color: $first;
+                font-weight: 400;
+                font-style: normal;
+            }
         }
     }
 }

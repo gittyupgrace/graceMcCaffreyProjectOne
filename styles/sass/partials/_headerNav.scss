@@ -8,11 +8,17 @@
     }
 
     a {
-        padding: 15px 10px;
-        margin: 5px 10px;
+        padding: 10px;
+        margin: 5px 15px;
+        transition: 0.3s;
+
+        &:hover, 
+        &:focus {
+            color: $white;
+        }
     }
 
     h1 {
-        margin: 8px;
+        margin: 5px;
     }
 }

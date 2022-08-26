@@ -9,11 +9,12 @@ html { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: 
 .sr-only { position: absolute; width: 1px; height: 1px; margin: -1px; border: 0; padding: 0; white-space: nowrap; clip-path: inset(100%); clip: rect(0 0 0 0); overflow: hidden;}
 
 .skipLink {
-    background-color: white;
-    color: black;
+    background-color: rgb(168, 39, 6);
+    color: white;
     font-size: 1rem;
     font-weight: bold;
-    padding: 10px 0;
+    text-decoration: underline;
+    padding: 20px 0;
     position: absolute;
     left: -1000px;
     top: 0;

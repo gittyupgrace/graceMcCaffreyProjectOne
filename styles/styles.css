@@ -236,11 +236,12 @@ html {
 }
 
 .skipLink {
-  background-color: white;
-  color: black;
+  background-color: rgb(168, 39, 6);
+  color: white;
   font-size: 1rem;
   font-weight: bold;
-  padding: 10px 0;
+  text-decoration: underline;
+  padding: 20px 0;
   position: absolute;
   left: -1000px;
   top: 0;
@@ -322,8 +323,8 @@ h5,
 }
 
 h1 {
-  font-size: 32px;
-  font-size: 1.6rem;
+  font-size: 38px;
+  font-size: 1.9rem;
 }
 
 h2 {
@@ -407,11 +408,16 @@ h5 {
           align-items: center;
 }
 .headerNav a {
-  padding: 15px 10px;
-  margin: 5px 10px;
+  padding: 10px;
+  margin: 5px 15px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.headerNav a:hover, .headerNav a:focus {
+  color: white;
 }
 .headerNav h1 {
-  margin: 8px;
+  margin: 5px;
 }
 
 .homepageHeader {
@@ -464,6 +470,60 @@ h5 {
 .blogHeader h2 {
   position: absolute;
   bottom: -115px;
+}
+
+footer p {
+  color: white;
+  background-color: rgb(44, 44, 44);
+  text-align: center;
+  padding: 5px 0;
+  margin: 0 auto;
+}
+footer a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+footer a:hover, footer a:focus {
+  color: rgb(12, 210, 232);
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+form.contactForm {
+  min-width: calc(70% - 20px);
+  margin-left: 20px;
+}
+form.commentForm {
+  min-width: 100%;
+}
+form .formFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+form input {
+  display: block;
+  border: none;
+}
+form input.name, form input.email {
+  padding: 20px;
+  width: 49%;
+}
+form textarea {
+  border: none;
+  padding: 20px;
+  margin: 20px 0 10px;
+  resize: none;
 }
 
 .about {
@@ -594,60 +654,6 @@ h5 {
   max-width: calc(33% - 15px);
 }
 
-footer p {
-  color: white;
-  background-color: rgb(44, 44, 44);
-  text-align: center;
-  padding: 5px 0;
-  margin: 0 auto;
-}
-footer a {
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-footer a:hover, footer a:focus {
-  color: rgb(12, 210, 232);
-}
-
-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-form.contactForm {
-  min-width: calc(70% - 20px);
-  margin-left: 20px;
-}
-form.commentForm {
-  min-width: 100%;
-}
-form .formFlex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-form input {
-  display: block;
-  border: none;
-}
-form input.name, form input.email {
-  padding: 20px;
-  width: 49%;
-}
-form textarea {
-  border: none;
-  padding: 20px;
-  margin: 20px 0 10px;
-  resize: none;
-}
-
 .contactPage {
   background-color: rgba(189, 188, 186, 0.188);
 }
@@ -736,6 +742,11 @@ form textarea {
 }
 .blogLinks .recentPosts li::marker {
   color: rgb(246, 168, 35);
+}
+.blogLinks .recentPosts li a {
+  color: rgb(44, 44, 44);
+  font-weight: 400;
+  font-style: normal;
 }
 
 .blogPageContent {

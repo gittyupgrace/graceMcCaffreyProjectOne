@@ -1,17 +1,25 @@
+//General Site Styles
 @import '../partials/setup';
 @import '../partials/variables';
 @import '../partials/mixins';
 @import '../partials/baseStyles';
 @import '../partials/typography';
 
+//General Page Styles
 @import '../partials/headerNav';
 @import '../partials/header';
-@import '../partials/about';
-@import '../partials/mainNav';
-@import '../partials/sophiesJourney';
-@import '../partials/gallery';
 @import '../partials/footer';
-
 @import '../partials/formStyles';
+
+//Homepage Styles
+@import '../partials/homeAbout';
+@import '../partials/homeMainNav';
+@import '../partials/homeSophiesJourney';
+@import '../partials/homeGallery';
+
+//Additional Pages Styles
 @import '../partials/contactPage';
 @import '../partials/blogPage';
+
+//Responsiveness Styles
+@import '../partials/mediaQueries';
