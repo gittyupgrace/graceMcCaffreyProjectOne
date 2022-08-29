@@ -395,8 +395,14 @@ h5 {
 
 .headerNav {
   background-color: rgb(246, 168, 35);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
-.headerNav ul {
+.headerNav .menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -418,6 +424,19 @@ h5 {
 }
 .headerNav h1 {
   margin: 5px;
+}
+.headerNav label {
+  display: none;
+  font-size: 1.5rem;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  padding: 30px;
+}
+.headerNav label:hover, .headerNav label:focus {
+  color: white;
+}
+.headerNav #toggleBurg {
+  display: none;
 }
 
 .homepageHeader {
@@ -790,4 +809,32 @@ form textarea {
 .blogPageContent .comment .commentContent {
   min-width: calc(85% - 10px);
   margin-left: 10px;
+}
+
+@media (max-width: 880px) {
+  .headerNav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .headerNav label {
+    display: block;
+    cursor: pointer;
+  }
+  .headerNav .menu {
+    display: none;
+    width: 40%;
+    margin-left: 75px;
+    margin-bottom: 50px;
+  }
+  .headerNav .menu li {
+    border-bottom: 2px solid black;
+  }
+  .headerNav .menu li.logoHide {
+    display: none;
+  }
+  .headerNav #toggleBurg:checked + .menu {
+    display: block;
+  }
 }

@@ -1,7 +1,9 @@
 .headerNav {
     background-color: $primaryBackground;
+    display: flex;
+    justify-content: flex-end;
 
-    ul {
+    .menu {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -20,5 +22,21 @@
 
     h1 {
         margin: 5px;
+    }
+
+    label {
+        display: none;
+        font-size: 1.5rem;
+        transition: 0.3s;
+        padding: 30px;
+    
+        &:hover,
+        &:focus {
+            color: $white;
+        }
+    }
+    
+    #toggleBurg {
+        display: none;
     }
 }
