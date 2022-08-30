@@ -1,4 +1,148 @@
+@media (max-width: 1200px) {
+
+    //Headers Styling
+    
+    .homepageHeader {
+
+        .homepageHeaderFlex {
+            justify-content: center;
+        }
+
+        .headerTitle {
+            margin-top: 0;
+
+            h2 {
+                @include fontSize(120);
+                margin: 105px 0 50px;
+            }
+        }
+
+        .headerImgPosition {
+            margin-top: 50px;
+            position: static;
+            align-self: center;
+        }
+    }
+
+    .contactHeader,
+    .blogHeader {
+        background-position: center;
+    }
+
+    //About Section Styling
+
+    .aboutIntro {
+        width: 90%;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .aboutPosts {
+
+        .aboutPostsFlex {
+            flex-direction: column;
+            align-items: center;
+        
+            &.aboutPosts2 {
+                flex-direction: column;
+            }
+        
+            div {
+                width: 85%;
+            }
+        }
+
+        .aboutPostsImg1 {
+            margin-top: 75px;
+        }
+
+        .aboutPostsImg1,
+        .aboutPostsImg2 {
+            margin-right: 0;
+            position: static;
+        
+            img {
+                position: static;
+            }
+        }
+
+        .aboutPostsContent1 {
+            text-align: right;
+            margin: 50px 0;
+        }
+        
+        .aboutPostsContent2 {
+            text-align: left;
+            margin: 50px 0;
+        }
+    }
+
+    //Blog Page Styling
+
+    .blogFlex {
+        flex-direction: column;
+    }
+
+    .blogLinks {
+        display: flex;
+        justify-content: space-between;
+        margin-right: 0;
+        padding: 20px 0;
+
+        .blogAbout {
+            display: flex;
+            width: calc(68% - 15px);
+            margin-right: 15px;
+
+            .aboutSophie {
+                width: calc(65% - 30px);
+                padding-left: 30px;
+            }
+        }
+
+        .recentPosts {
+            align-self: flex-start;
+            width: calc(32% - 15px);
+            margin-left: 15px;
+            margin-bottom: 0;
+
+            li {
+                list-style-position: inherit;
+                border-bottom: 2px solid $secondaryBackground;
+                border-left: 2px solid $secondaryBackground;
+                margin-top: 10px;
+                padding-left: 10px;
+            }
+        }
+    }
+
+    .blogPageContent {
+        margin-left: 0;
+
+        .comment {
+    
+            .commentAvatar {
+                min-width: calc(30% - 15px);
+            }
+    
+            .commentContent {
+                min-width: calc(70% - 10px);
+            }
+        }
+    }
+}
+
+
 @media (max-width: 880px) {
+
+    //Base Styles
+
+    .button {
+        width: 100%;
+    }
+
+
+    //Hamburger Nav Styling/Function
 
     .headerNav {
         flex-direction: column;
@@ -24,8 +168,70 @@
             }
         }
 
-        #toggleBurg:checked+.menu {
+        #toggleBurg:checked + .menu {
             display: block;
+        }
+    }
+
+    //Headers Styling
+
+    .homepageHeader{
+
+        .homepageHeaderFlex {
+            flex-direction: column;
+        }
+        
+        .headerTitle {
+            margin-top: 0;
+        
+            h2 {
+                @include fontSize(100);
+            }
+        }
+        
+        .headerImgPosition {
+            margin-top: 0;
+        }
+    }
+
+    //Homepage Styling
+
+    .mainNav {
+
+        ul {
+            flex-direction: column;
+        }
+    }
+
+    .sophiesJourney {
+
+        .journeyFlex {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .journeyImg {
+            width: 70%;
+        }
+
+        .journeyContent {
+            width: 100%;
+        }
+    }
+
+    .gallery {
+    
+        ul {
+            flex-direction: column;
+        }
+    }
+
+    //Blog Page Styling
+
+    .blogLinks {
+
+        .blogAbout {
+            flex-direction: column-reverse;
         }
     }
 }
