@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sophie</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -16,45 +20,46 @@
     
     <nav class="headerNav">
         <div class="burgLogo">
-            <h1><a href="#home" class="logo">Sophie</a></h1>
+            <h1><a href="./index.html" class="logo">Sophie</a></h1>
         </div>
         <label for="toggleBurg" class="wrapper"><i class="fa-solid fa-bars burgMenu"></i></label>
         <input type="checkbox" id="toggleBurg">
         
         <ul class="menu wrapper">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="./index.html#about">About</a></li>
             <li class="logoHide"><a href="./index.html" class="logo"><h1>Sophie</h1></a></li>
             <li><a href="./blog.html">Blog</a></li>
             <li><a href="./contact.html" class="highlightLink">Contact</a></li>
         </ul>
-    </nav>
+    </nav> <!--END of nav & .wrapper-->
 
     <header class="contactHeader">
         <div class="wrapper">
             <h2>Get in touch</h2>
         </div>
-    </header>
+    </header> <!--END of header & .wrapper-->
 
     <main class="contactPage" id="mainContent">
+
         <section class="contactMain wrapper">
             <div class="contactInfo">
                 <ul class="socialsIcons">
-                    <li><a href="#"><i class="fa-brands fa-facebook-f social"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-twitter social"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-linkedin-in social"></i></a></li>
-                    <li><a href="#"><i class="fa-brands fa-instagram social"></i></a></li>
+                    <li><a href="https://www.facebook.com/facebook/"><i class="fa-brands fa-facebook-f social"></i></a></li>
+                    <li><a href="https://twitter.com/?lang=en"><i class="fa-brands fa-twitter social"></i></a></li>
+                    <li><a href="https://ca.linkedin.com/"><i class="fa-brands fa-linkedin-in social"></i></a></li>
+                    <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram social"></i></a></li>
                 </ul>
                 <ul>
-                    <li class="emailAddress">info@email.com</li>
+                    <li class="emailAddress"><a href="mailto:info@email.com">info@email.com</a></li>
                     <li>123 - 456 - 7890</li>
                     <li>123 Queen Street West, Unit 10</li>
                     <li>Toronto, Ontario</li>
                     <li>M5V2D5</li>
                 </ul>
-            </div>
+            </div> <!--END of .contactInfo-->
 
-            <form action="" method="" class="contactForm" name="contactForm">
+            <form action="#" method="POST" class="contactForm" name="contactForm">
                 <div class="formFlex">
                     <label for="name" class="sr-only">Name</label>
                     <input type="text" id="name" class="name" placeholder="Name">
@@ -67,13 +72,12 @@
                 <textarea name="message" id="message" class="message" cols="30" rows="10" placeholder="Message"></textarea>
 
                 <button class="button submit">Submit</button>
-            </form>
-        </section>
-    </main>
+            </form> <!--END of form-->
+        </section> <!--END of .contactMAIN section-->
+    </main> <!--END of main-->
 
     <footer>
-        <p>Copyright © 2018 <a href="">HackerYou</a></p>
-    </footer>
-    
+        <p>Copyright © 2018 <a href="https://junocollege.com/">HackerYou</a></p>
+    </footer> <!--END of footer-->
 </body>
 </html>

@@ -636,6 +636,13 @@ form textarea {
   padding: 15px 30px;
   margin: 5px 30px;
 }
+.mainNav ul li a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.mainNav ul li a:hover, .mainNav ul li a:focus {
+  color: rgb(168, 39, 6);
+}
 
 .iconPosition {
   position: relative;
@@ -716,6 +723,13 @@ form textarea {
   font-weight: bold;
   padding: 8px 0;
 }
+.contactMain .contactInfo .emailAddress a {
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.contactMain .contactInfo .emailAddress a:hover, .contactMain .contactInfo .emailAddress a:focus {
+  text-decoration: underline;
+}
 
 .socialsIcons {
   display: -webkit-box;
@@ -726,8 +740,13 @@ form textarea {
   margin-left: 0;
   margin-right: 15px;
 }
-.socialsIcons li a {
+.socialsIcons li i {
   padding: 5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+.socialsIcons li i:hover, .socialsIcons li i:focus {
+  color: rgb(168, 39, 6);
 }
 .socialsIcons li .social {
   color: rgb(246, 168, 35);

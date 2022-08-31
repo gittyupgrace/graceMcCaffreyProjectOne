@@ -17,6 +17,15 @@
         .emailAddress {
             font-weight: bold;
             padding: 8px 0;
+
+            a {
+                transition: 0.3s;
+
+                &:hover, 
+                &:focus {
+                    text-decoration: underline;
+                }
+            }
         }
     }
 }
@@ -24,17 +33,23 @@
 .socialsIcons {
     display: flex;
     
-        li {
-            margin-left: 0;
-            margin-right: 15px;
+    li {
+        margin-left: 0;
+        margin-right: 15px;
 
-            a {
-                padding: 5px;
-            }
+        i {
+            padding: 5px;
+            transition: 0.3s;
 
-            .social {
-                color: $primaryBackground;
-                @include fontSize(28);
+            &:hover, 
+            &:focus {
+                color: $secondaryAccent;
             }
         }
+
+        .social {
+            color: $primaryBackground;
+            @include fontSize(28);
+        }
+    }
 }

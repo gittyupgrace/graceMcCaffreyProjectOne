@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sophie</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
@@ -16,34 +20,35 @@
 
     <nav class="headerNav">
         <div class="burgLogo">
-            <h1><a href="#home" class="logo">Sophie</a></h1>
+            <h1><a href="./index.html" class="logo">Sophie</a></h1>
         </div>
         <label for="toggleBurg" class="wrapper"><i class="fa-solid fa-bars burgMenu"></i></label>
         <input type="checkbox" id="toggleBurg">
         
         <ul class="menu wrapper">
             <li><a href="./index.html">Home</a></li>
-            <li><a href="#about">About</a></li>
+            <li><a href="#aboutSophie">About</a></li>
             <li class="logoHide"><a href="./index.html" class="logo"><h1>Sophie</h1></a></li>
             <li><a href="./blog.html" class="highlightLink">Blog</a></li>
             <li><a href="./contact.html">Contact</a></li>
-        </ul>
-    </nav>
+        </ul> <!--END of .wrapper-->
+    </nav> <!--END of nav-->
 
     <header class="blogHeader">
         <div class="wrapper">
             <h2>Blog</h2>
         </div>
-    </header>
+    </header> <!--END of header-->
 
     <main class="blogMain" id="mainContent">
         <div class="wrapper blogFlex">
+
             <section class="blogLinks">
                 <div class="blogAbout">
                     <div><img src="./assets/blog-image-2.jpg" alt="A girl with blonde hair and space buns wearing an orange sweater holds two round slices of orange over her eyes and sticks out her tongue, making a goofy expression."></div>
-                    <div class="aboutSophie">
+                    <div class="aboutSophie" id="aboutSophie">
                         <h5>About Sophie</h5>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit magni amet voluptate. <a href="#">Find out more.</a></p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit magni amet voluptate. <a href="#firstPost">Find out more.</a></p>
                     </div>
                 </div>
                 <div class="recentPosts">
@@ -55,14 +60,13 @@
                         <li><a href="#">Alias, id sapiente.</a></li>
                     </ul>
                 </div>
-            </section>
+            </section> <!--END of .blogLinks Section-->
 
             <section class="blogPageContent">
-
-                <div class="firstPost">
+                <div class="firstPost" id="firstPost">
                     <div>
                         <h4>Why I became a blogger</h4>
-                        <p>Monday October 8th, 2018 by <a href="#">Sophie Barlow</a></p>
+                        <p>Monday October 8th, 2018 by <a href="#aboutSophie">Sophie Barlow</a></p>
 
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur aperiam rerum quae aspernatur! Ipsam, aperiam. Cupiditate cumque magnam dicta ratione! In, a! Consectetur ut aliquid expedita tempora, repellendus dicta doloremque esse reiciendis mollitia.</p>
                             
@@ -96,7 +100,7 @@
                     </div>
                 </div>
 
-                <form action="" method="" class="commentForm" name="commentForm">
+                <form action="#" method="POST" class="commentForm" name="commentForm">
                         <div class="formFlex">
                             <label for="name" class="sr-only">Name</label>
                             <input type="text" id="name" class="name" placeholder="Name">
@@ -111,12 +115,12 @@
                     <button class="button submit">Post Comment</button>
                 </form>
                 
-            </section>
+            </section> <!--END of .blogPageContent Section-->
         </div> <!--END of .wrapper-->
-    </main>
+    </main> <!--END of main-->
 
     <footer>
-        <p>Copyright © 2018 <a href="">HackerYou</a></p>
-    </footer>
+        <p>Copyright © 2018 <a href="https://junocollege.com/">HackerYou</a></p>
+    </footer> <!--END of footer-->
 </body>
 </html>
