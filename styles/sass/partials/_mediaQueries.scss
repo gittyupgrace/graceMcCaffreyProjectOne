@@ -12,7 +12,7 @@
             margin-top: 0;
 
             h2 {
-                @include fontSize(120);
+                @include fontSize(116);
                 margin: 105px 0 50px;
             }
         }
@@ -120,7 +120,6 @@
         margin-left: 0;
 
         .comment {
-    
             .commentAvatar {
                 min-width: calc(30% - 15px);
             }
@@ -152,6 +151,19 @@
 
     .headerNav {
         flex-direction: column;
+        position: relative;
+
+        .burgLogo {
+            display: block;
+            position: absolute;
+            top: 7px;
+            left: 122px;
+            
+            a {
+                margin-left: 0;
+                padding-left: 0;
+            }
+        }
 
         label {
             display: block;
@@ -163,7 +175,6 @@
             width: 40%;
             margin-left: 75px;
             margin-bottom: 50px;
-            
 
             li {
                 border-bottom: 2px solid black;
@@ -181,7 +192,7 @@
 
     //Headers Styling
 
-    .homepageHeader{
+    .homepageHeader {
         min-height: 50vh;
 
         .homepageHeaderFlex {
@@ -199,6 +210,7 @@
         .headerImgPosition {
             max-width: calc(100% - 50px);
             margin-top: 0;
+            margin-left: 0;
         }
     }
 
@@ -215,7 +227,6 @@
     //Homepage Styling
 
     .mainNav {
-
         ul {
             flex-direction: column;
             
@@ -226,7 +237,6 @@
     }
 
     .sophiesJourney {
-
         .journeyFlex {
             flex-direction: column;
             align-items: center;
@@ -242,7 +252,6 @@
     }
 
     .gallery {
-    
         ul {
             flex-direction: column;
         }
@@ -251,7 +260,6 @@
     //Blog Page Styling
 
     .blogLinks {
-
         flex-direction: column;
 
         .blogAbout, 
@@ -278,7 +286,6 @@
     }
 
     form {
-
         &.contactForm {
             width: 100%;
             margin-left: 0;
@@ -289,11 +296,117 @@
         }
 
         input {
-        
             &.name,
             &.email {
                 margin-top: 20px;
                 width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 628px) {
+
+    //Header Styling
+
+    .contactHeader {
+        background-position: center;
+    }
+
+    //Homepage Styling
+
+    .aboutIntro {
+        padding: 20px;
+    }
+
+    .aboutPosts {
+        .aboutPostsContent1 {
+            padding-left: 0;
+        }
+
+        .aboutPostsContent2 {
+            padding-right: 0;
+        }
+    }
+
+    .mainNav {
+        ul {
+            li {
+                padding-left: 20px;
+                padding-right: 0;
+                margin: 40px 0;
+
+                .icon {
+                    left: 0;
+                    top: -30px;
+                }
+
+            }
+        }
+    }
+
+    //Blog Page Styling
+
+    .blogLinks {
+        .blogAbout {
+            flex-direction: column;
+
+            .aboutSophie {
+                width: 100%;
+            }
+        }
+    }
+
+    .blogPageContent {
+        .comment{
+            flex-direction: column;
+
+            .commentAvatar {
+                width: 30%;
+                margin-bottom: 30px;
+            }
+        }
+    }
+}
+
+@media (max-width: 493px) {
+
+    //Header Styling
+
+    .homepageHeader {
+        .headerTitle {
+            padding-left: 35px;
+
+            h2 {
+                @include fontSize(58);
+                margin-top: 67px;
+            }
+        }
+
+        .headerTextPosition {
+            width: 145px;
+            height: 145px;
+        }
+    }
+
+    .blogHeader {
+        background-position: -613px;
+    }
+
+    .blogHeader, 
+    .contactHeader {
+        h2 {
+            @include fontSize(74);
+            line-height: 1;
+        }
+    }
+
+    //Blog Page Styling
+
+    .blogPageContent {
+        .comment {    
+            .commentAvatar {
+                width: 50%
             }
         }
     }

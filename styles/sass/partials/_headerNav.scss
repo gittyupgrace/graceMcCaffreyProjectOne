@@ -3,6 +3,10 @@
     display: flex;
     justify-content: flex-end;
 
+    .burgLogo {
+        display: none;
+    }
+
     .menu {
         display: flex;
         justify-content: center;

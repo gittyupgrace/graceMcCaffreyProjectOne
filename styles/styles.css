@@ -402,6 +402,9 @@ h5 {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
+.headerNav .burgLogo {
+  display: none;
+}
 .headerNav .menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -818,8 +821,8 @@ form textarea {
     margin-top: 0;
   }
   .homepageHeader .headerTitle h2 {
-    font-size: 120px;
-    font-size: 6rem;
+    font-size: 116px;
+    font-size: 5.8rem;
     margin: 105px 0 50px;
   }
   .homepageHeader .headerImgPosition {
@@ -939,6 +942,17 @@ form textarea {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    position: relative;
+  }
+  .headerNav .burgLogo {
+    display: block;
+    position: absolute;
+    top: 7px;
+    left: 122px;
+  }
+  .headerNav .burgLogo a {
+    margin-left: 0;
+    padding-left: 0;
   }
   .headerNav label {
     display: block;
@@ -978,6 +992,7 @@ form textarea {
   .homepageHeader .headerImgPosition {
     max-width: calc(100% - 50px);
     margin-top: 0;
+    margin-left: 0;
   }
   .contactHeader {
     background-position: left;
@@ -1058,5 +1073,73 @@ form textarea {
   form input.name, form input.email {
     margin-top: 20px;
     width: 100%;
+  }
+}
+@media (max-width: 628px) {
+  .contactHeader {
+    background-position: center;
+  }
+  .aboutIntro {
+    padding: 20px;
+  }
+  .aboutPosts .aboutPostsContent1 {
+    padding-left: 0;
+  }
+  .aboutPosts .aboutPostsContent2 {
+    padding-right: 0;
+  }
+  .mainNav ul li {
+    padding-left: 20px;
+    padding-right: 0;
+    margin: 40px 0;
+  }
+  .mainNav ul li .icon {
+    left: 0;
+    top: -30px;
+  }
+  .blogLinks .blogAbout {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogLinks .blogAbout .aboutSophie {
+    width: 100%;
+  }
+  .blogPageContent .comment {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .blogPageContent .comment .commentAvatar {
+    width: 30%;
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 493px) {
+  .homepageHeader .headerTitle {
+    padding-left: 35px;
+  }
+  .homepageHeader .headerTitle h2 {
+    font-size: 58px;
+    font-size: 2.9rem;
+    margin-top: 67px;
+  }
+  .homepageHeader .headerTextPosition {
+    width: 145px;
+    height: 145px;
+  }
+  .blogHeader {
+    background-position: -613px;
+  }
+  .blogHeader h2,
+.contactHeader h2 {
+    font-size: 74px;
+    font-size: 3.7rem;
+    line-height: 1;
+  }
+  .blogPageContent .comment .commentAvatar {
+    width: 50%;
   }
 }
