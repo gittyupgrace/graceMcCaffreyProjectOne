@@ -9,7 +9,10 @@
 
 //display these values with hard coded comments (append a new div to .commentSection div)
 
-//Bonus stuff: add an avatar? or even a placeholder for an avatar
+//Bonus stuff: 
+    //fix date to match design brief
+    //add bottom yellow border to every second comment
+    //don't let user hit submit unless they have inputed info into all fields
 
 
     //PROCESS PSEUDOCODE:
@@ -19,7 +22,6 @@
 const commentForm = document.querySelector('.commentForm');
 const userName = document.querySelector('input[type=text]');
 const userComment = document.querySelector('textarea');
-
 const commentSection = document.querySelector('.commentSection');
 
 //Check to make sure they're all appearing:
@@ -27,8 +29,6 @@ const commentSection = document.querySelector('.commentSection');
 // console.log(userName);
 // console.log(userComment);
 // console.log(commentSection);
-
-
 
 //Add event listener to form to capture user input values when user hits submit and then display those inputs on the page using the css styling already in place
 
@@ -81,4 +81,25 @@ commentForm.addEventListener('submit', function(e) {
 
 
 
+//NEWSLETTER POP UP
+    //INITIAL PSEUDOCODE:
+
+    //user comes to page and popup is there
+    //user has to either input email or hit the x to make the popup disappear 
+    //include something to ensure if user is inputing an email that it is in the correct format for an email
+
+
+
+
+//SLIDE OUT MENU
+    //INITIAL PSEUDOCODE:
+
+    //user clicks on hamburger menu (add event listener for click)
+    //entire menu/nav slides out onto the page on click
+    //user can click the x in the corner to close the menu(another event listener - on this click the menu closes)
+    //on any other link click, menu also closes
+
+    //i think maybe, when user clicks ham menu, listen for click and find 'open' class which makes menu visible
+
+    //then when user hits x, find close class connected to visibility of menu being hidden
 

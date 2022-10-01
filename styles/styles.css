@@ -393,6 +393,65 @@ h5 {
   color: rgb(246, 246, 246);
 }
 
+.modal .close-modal {
+  font-size: 40px;
+  font-size: 2rem;
+  color: rgb(44, 44, 44);
+  font-weight: bold;
+}
+.modal h4 {
+  font-family: "Lora", serif;
+  font-size: 36px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.modal p {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 600px;
+  height: 400px;
+  background-color: rgba(189, 188, 186, 0.188);
+}
+.modal .close-modal {
+  border: none;
+  background: none;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 65px;
+}
+.modal h4 {
+  margin-bottom: 0;
+}
+.modal p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.modalForm {
+  width: 80%;
+}
+.modalForm .modalEmail {
+  width: 100%;
+  padding: 20px;
+}
+
 .headerNav {
   background-color: rgb(246, 168, 35);
   display: -webkit-box;
