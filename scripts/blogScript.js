@@ -1,6 +1,6 @@
 //BLOG COMMENTS
 
-    //INITIAL PSEUDOCODE:
+//INITIAL PSEUDOCODE:
 
 //pull form, name, message from html
 //find a way to include date comment was made
@@ -10,12 +10,12 @@
 //display these values with hard coded comments (append a new div to .commentSection div)
 
 //Bonus stuff: 
-    //fix date to match design brief
-    //add bottom yellow border to every second comment
-    //don't let user hit submit unless they have inputed info into all fields
+//fix date to match design brief
+//add bottom yellow border to every second comment
+//don't let user hit submit unless they have inputed info into all fields
 
 
-    //PROCESS PSEUDOCODE:
+//PROCESS PSEUDOCODE:
 
 
 //Grab needed elements from page
@@ -32,20 +32,17 @@ const commentSection = document.querySelector('.commentSection');
 
 //Add event listener to form to capture user input values when user hits submit and then display those inputs on the page using the css styling already in place
 
-commentForm.addEventListener('submit', function(e) {
+commentForm.addEventListener('submit', function (e) {
     e.preventDefault();
 
     const nameInput = userName.value;
-    // console.log(nameInput);
     const commentInput = userComment.value;
-    // console.log(commentInput);
 
     //create new div with a class of "comment" for each new comment
     const newComment = document.createElement('div');
     newComment.classList.add('comment');
 
     //created div for newComment, append this div on commentSection 
-
     commentSection.append(newComment);
 
     //for js to match original html/css, within newComment div, there needs to be two more divs, one for the user avatar img and one for the input values (ie the user name, comment and date they commented)
@@ -60,8 +57,8 @@ commentForm.addEventListener('submit', function(e) {
     const commentContent = document.createElement('div');
     commentContent.classList.add('commentContent');
 
-    const postDate = Date();
-
+    const date = new Date();
+    const postDate = date.toDateString();
     const nameA = document.createElement('a');
     nameA.textContent = `${postDate} by ${nameInput}`;
     commentContent.appendChild(nameA);
@@ -73,69 +70,7 @@ commentForm.addEventListener('submit', function(e) {
 
     newComment.appendChild(commentContent);
 
-    
+
     //reset form input values after sumbit so form is empty for next user
     commentForm.reset();
 });
-
-
-
-
-//BLOG/NEWSLETTER POP UP
-    //INITIAL PSEUDOCODE:
-
-    //user comes to page and popup is there
-    //user has to either input email or hit the x to make the popup disappear 
-    //include something to ensure if user is inputing an email that it is in the correct format for an email
-
-    //grab the things:
-
-    const modalOpen = document.querySelector('.overlay')
-    // console.log(modalOpen)
-
-    const closeModalButton = document.getElementById('close-modal-button');
-    // console.log(closeModalButton)
-
-    const modalForm = document.querySelector('.modalForm');
-    //console.log(modalForm)
-
-    //function to open modal a couple seconds after page load
-    function openModal() {
-        modalOpen.classList.add('modal-open');
-    }
-
-    //function to close modal
-    function closeModal() {
-        modalOpen.classList.remove('modal-open');
-        modalOpen.classList.add('modal-close');
-    }
-
-    //user arrives at page, modal pops up after 2 seconds (class of modal-open added to overlay)
-    setTimeout(openModal(), 2000);
-
-
-    //user clicks close-modal-button, add class modal-close to overlay
-    closeModalButton.addEventListener('click', function() {
-        closeModal();
-    })
-
-    //user inputs email address and hits submit to close modal
-    modalForm.addEventListener('submit', function (e) {
-        e.preventDefault();
-        closeModal();
-        modalForm.reset();
-    });
-
-
-//SLIDE OUT MENU??
-    //INITIAL PSEUDOCODE:
-
-    //user clicks on hamburger menu (add event listener for click)
-    //entire menu/nav slides out onto the page on click
-    //user can click the x in the corner to close the menu(another event listener - on this click the menu closes)
-    //on any other link click, menu also closes
-
-    //i think maybe, when user clicks ham menu, listen for click and find 'open' class which makes menu visible
-
-    //then when user hits x, find close class connected to visibility of menu being hidden
-
