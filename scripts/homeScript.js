@@ -43,3 +43,10 @@ modalForm.addEventListener('submit', function (e) {
     closeModal();
     modalForm.reset();
 });
+
+
+
+//GALLERY CAROUSEL
+
+//user clicks next button or previous button to navigate through a slide deck of images
+

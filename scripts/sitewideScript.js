@@ -10,3 +10,16 @@
 
     //then when user hits x, find close class connected to visibility of menu being hidden
 
+
+const hamburgerButton = document.getElementById('toggleBurg');
+
+const navMenu = document.querySelector('.menu');
+
+// function hamburgerToggle() {
+//     navMenu.classList.toggle('show');
+// }
+
+hamburgerButton.addEventListener('click', function(e) {
+    console.log("clicked!");
+    navMenu.classList.toggle('showMenu');
+});

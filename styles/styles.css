@@ -474,7 +474,8 @@ h5 {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.headerNav .burgLogo {
+.headerNav .burgLogo,
+.headerNav #toggleBurg {
   display: none;
 }
 .headerNav .menu {
@@ -499,19 +500,6 @@ h5 {
 }
 .headerNav h1 {
   margin: 5px;
-}
-.headerNav label {
-  display: none;
-  font-size: 1.5rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  padding: 30px;
-}
-.headerNav label:hover, .headerNav label:focus {
-  color: white;
-}
-.headerNav #toggleBurg {
-  display: none;
 }
 
 .homepageHeader {
@@ -1037,14 +1025,11 @@ form textarea {
     width: 100%;
   }
   .headerNav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     position: relative;
   }
   .headerNav .burgLogo {
     display: block;
+    z-index: 100;
     position: absolute;
     top: 7px;
     left: 122px;
@@ -1053,27 +1038,56 @@ form textarea {
     margin-left: 0;
     padding-left: 0;
   }
-  .headerNav label {
-    display: block;
+  .headerNav .burgButton {
+    z-index: 100;
+    background-color: transparent;
+    border: none;
+    padding-right: 30px;
     cursor: pointer;
+    position: absolute;
+    top: 28px;
+    left: 82px;
+  }
+  .headerNav .burgButton .burgMenu {
+    font-size: 1.5rem;
+    color: rgb(44, 44, 44);
+  }
+  .headerNav #toggleBurg {
+    display: block;
   }
   .headerNav .menu {
     display: none;
-    width: 40%;
-    margin-left: 75px;
-    margin-bottom: 50px;
+    width: 80%;
+    background: white;
+    padding-top: 80px;
+    padding-left: 60px;
+    padding-bottom: 30px;
+    -webkit-box-shadow: 5px 5px rgb(44, 44, 44);
+            box-shadow: 5px 5px rgb(44, 44, 44);
+    position: absolute;
+    top: -1000px;
+    left: 0;
+    z-index: 98;
   }
-  .headerNav .menu li {
-    border-bottom: 2px solid black;
+  .headerNav .menu li a {
+    margin: 5px 3px;
+  }
+  .headerNav .menu li a:hover, .headerNav .menu li a:focus {
+    color: rgb(40, 94, 100);
   }
   .headerNav .menu li.logoHide {
     display: none;
   }
-  .headerNav #toggleBurg:checked + .menu {
+  .headerNav .highlightLink {
+    color: rgb(40, 94, 100);
+  }
+  .headerNav .showMenu {
     display: block;
+    top: 0;
   }
   .homepageHeader {
     min-height: 50vh;
+    padding-top: 100px;
   }
   .homepageHeader .homepageHeaderFlex {
     -webkit-box-orient: vertical;
@@ -1195,6 +1209,9 @@ form textarea {
   .contactHeader {
     background-position: center;
   }
+  .headerNav .menu {
+    width: 100%;
+  }
   .aboutIntro {
     padding: 20px;
   }
@@ -1254,6 +1271,9 @@ form textarea {
     font-size: 74px;
     font-size: 3.7rem;
     line-height: 1;
+  }
+  .sophiesJourney .journeyContent {
+    padding: 20px 20px 0;
   }
   .blogPageContent .comment .commentAvatar {
     width: 50%;

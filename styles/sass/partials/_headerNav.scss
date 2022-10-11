@@ -3,7 +3,8 @@
     display: flex;
     justify-content: flex-end;
 
-    .burgLogo {
+    .burgLogo, 
+    #toggleBurg {
         display: none;
     }
 
@@ -26,21 +27,5 @@
 
     h1 {
         margin: 5px;
-    }
-
-    label {
-        display: none;
-        font-size: 1.5rem;
-        transition: 0.3s;
-        padding: 30px;
-    
-        &:hover,
-        &:focus {
-            color: $white;
-        }
-    }
-    
-    #toggleBurg {
-        display: none;
     }
 }
