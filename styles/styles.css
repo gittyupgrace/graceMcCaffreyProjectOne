@@ -1032,11 +1032,15 @@ form textarea {
     z-index: 100;
     position: absolute;
     top: 7px;
-    left: 122px;
+    left: 108px;
   }
   .headerNav .burgLogo a {
     margin-left: 0;
     padding-left: 0;
+  }
+  .headerNav .burgLogo a:hover, .headerNav .burgLogo a:focus {
+    color: rgb(44, 44, 44);
+    text-decoration: underline;
   }
   .headerNav .burgButton {
     z-index: 100;
@@ -1046,7 +1050,7 @@ form textarea {
     cursor: pointer;
     position: absolute;
     top: 28px;
-    left: 82px;
+    left: 68px;
   }
   .headerNav .burgButton .burgMenu {
     font-size: 1.5rem;
@@ -1056,18 +1060,21 @@ form textarea {
     display: block;
   }
   .headerNav .menu {
-    display: none;
-    width: 80%;
+    display: block;
+    visibility: hidden;
+    width: 60%;
     background: white;
     padding-top: 80px;
     padding-left: 60px;
     padding-bottom: 30px;
-    -webkit-box-shadow: 5px 5px rgb(44, 44, 44);
-            box-shadow: 5px 5px rgb(44, 44, 44);
+    -webkit-box-shadow: 6px 6px rgb(44, 44, 44);
+            box-shadow: 6px 6px rgb(44, 44, 44);
     position: absolute;
-    top: -1000px;
-    left: 0;
+    top: 0;
+    left: -100%;
     z-index: 98;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
   .headerNav .menu li a {
     margin: 5px 3px;
@@ -1082,8 +1089,10 @@ form textarea {
     color: rgb(40, 94, 100);
   }
   .headerNav .showMenu {
-    display: block;
-    top: 0;
+    visibility: visible;
+    left: 0;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
   .homepageHeader {
     min-height: 50vh;
@@ -1210,7 +1219,7 @@ form textarea {
     background-position: center;
   }
   .headerNav .menu {
-    width: 100%;
+    width: 95%;
   }
   .aboutIntro {
     padding: 20px;
