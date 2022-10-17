@@ -393,7 +393,7 @@ h5 {
   color: rgb(246, 246, 246);
 }
 
-.modal .close-modal-button {
+.modal .closeModalButton {
   font-size: 40px;
   font-size: 2rem;
   color: rgb(44, 44, 44);
@@ -420,7 +420,7 @@ h5 {
   visibility: hidden;
 }
 
-.modal-open {
+.modalOpen {
   visibility: visible;
 }
 
@@ -445,7 +445,7 @@ h5 {
   top: 25%;
   margin: 0 auto;
 }
-.modal .close-modal-button {
+.modal .closeModalButton {
   border: none;
   background: none;
   -ms-flex-item-align: end;
@@ -461,7 +461,7 @@ h5 {
   margin-bottom: 30px;
 }
 
-.modal-close {
+.modalClose {
   visibility: hidden;
 }
 
@@ -1203,7 +1203,7 @@ form textarea {
     height: 400px;
     top: 15%;
   }
-  .modal .close-modal-button {
+  .modal .closeModalButton {
     margin-right: 45px;
   }
   .modal h4 {

@@ -8,7 +8,7 @@
     visibility: hidden;
 }
 
-.modal-open {
+.modalOpen {
     visibility: visible;
 }
 
@@ -24,7 +24,7 @@
     top: 25%;
     margin: 0 auto;
 
-    .close-modal-button {
+    .closeModalButton {
         border: none;
         background:none;
         align-self: flex-end;
@@ -42,7 +42,7 @@
     }
 }
 
-.modal-close {
+.modalClose {
     visibility: hidden;
 }
 
