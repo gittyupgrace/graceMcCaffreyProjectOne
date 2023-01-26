@@ -236,7 +236,7 @@ html {
 }
 
 .skipLink {
-  background-color: rgb(168, 39, 6);
+  background-color: rgb(44, 44, 44);
   color: white;
   font-size: 1rem;
   font-weight: bold;
@@ -281,7 +281,7 @@ ul {
 }
 
 .button {
-  background-color: rgb(12, 210, 232);
+  background-color: rgb(67, 149, 225);
   padding: 8px 30px;
   margin: 15px 0;
   -webkit-transition: 0.3s;
@@ -291,7 +291,8 @@ ul {
   border: none;
 }
 .button:hover, .button:focus {
-  background-color: rgb(246, 168, 35);
+  background-color: rgb(238, 234, 230);
+  color: rgb(44, 44, 44);
 }
 
 html {
@@ -338,6 +339,7 @@ h2 {
 .blogHeader h2 {
   font-size: 90px;
   font-size: 4.5rem;
+  color: white;
 }
 
 h3 {
@@ -353,6 +355,12 @@ h4 {
 h5 {
   font-size: 22px;
   font-size: 1.1rem;
+}
+
+.aboutIntro,
+.mainNav,
+.sophiesJourney {
+  color: white;
 }
 
 ::-webkit-input-placeholder {
@@ -387,14 +395,90 @@ h5 {
 
 .button {
   text-align: center;
+  color: white;
 }
 
 .highlightLink {
-  color: rgb(246, 246, 246);
+  color: rgb(67, 149, 225);
+}
+
+.modal {
+  color: white;
+}
+.modal .closeModalButton {
+  font-size: 40px;
+  font-size: 2rem;
+  color: white;
+  font-weight: bold;
+}
+.modal h4 {
+  font-family: "Lora", serif;
+  font-size: 36px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.modal p {
+  font-weight: bold;
+  font-style: italic;
+}
+
+.overlay {
+  position: fixed;
+  background-color: rgba(79, 79, 79, 0.7);
+  z-index: 50;
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.modalOpen {
+  display: block;
+}
+
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 575px;
+  height: 400px;
+  background-color: rgb(44, 44, 44);
+  position: relative;
+  top: 25%;
+  margin: 0 auto;
+}
+.modal .closeModalButton {
+  border: none;
+  background: none;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-right: 65px;
+  cursor: pointer;
+}
+.modal h4 {
+  margin-bottom: 0;
+}
+.modal p {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.modalClose {
+  display: none;
 }
 
 .headerNav {
-  background-color: rgb(246, 168, 35);
+  background-color: rgb(238, 234, 230);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -402,7 +486,8 @@ h5 {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.headerNav .burgLogo {
+.headerNav .burgLogo,
+.headerNav #toggleBurg {
   display: none;
 }
 .headerNav .menu {
@@ -423,27 +508,14 @@ h5 {
   transition: 0.3s;
 }
 .headerNav a:hover, .headerNav a:focus {
-  color: white;
+  color: rgb(67, 149, 225);
 }
 .headerNav h1 {
   margin: 5px;
 }
-.headerNav label {
-  display: none;
-  font-size: 1.5rem;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  padding: 30px;
-}
-.headerNav label:hover, .headerNav label:focus {
-  color: white;
-}
-.headerNav #toggleBurg {
-  display: none;
-}
 
 .homepageHeader {
-  background-color: rgb(246, 168, 35);
+  background-color: rgb(238, 234, 230);
   min-height: 80vh;
 }
 .homepageHeader .homepageHeaderFlex {
@@ -467,8 +539,9 @@ h5 {
 }
 .homepageHeader .headerTextPosition {
   position: absolute;
-  top: 30px;
-  left: 0;
+  top: 45px;
+  left: -15px;
+  z-index: -1;
 }
 .homepageHeader .headerImgPosition {
   max-width: calc(40% - 50px);
@@ -478,16 +551,16 @@ h5 {
   right: 50px;
 }
 .homepageHeader .headerImgPosition img {
-  -webkit-box-shadow: 15px 15px white;
-          box-shadow: 15px 15px white;
+  -webkit-box-shadow: 15px 15px rgb(198, 238, 150);
+          box-shadow: 15px 15px rgb(198, 238, 150);
 }
 
 .contactHeader {
-  background-image: url(../assets/contact-image-1.jpg);
+  background-image: url(../assets/contact-image-1.png);
 }
 
 .blogHeader {
-  background-image: url(../assets/blog-image-1.jpg);
+  background-image: url(../assets/blog-image-1.png);
 }
 
 .contactHeader,
@@ -504,8 +577,8 @@ h5 {
 }
 
 footer p {
-  color: white;
-  background-color: rgb(44, 44, 44);
+  color: rgb(44, 44, 44);
+  background-color: white;
   text-align: center;
   padding: 5px 0;
   margin: 0 auto;
@@ -515,7 +588,7 @@ footer a {
   transition: 0.3s;
 }
 footer a:hover, footer a:focus {
-  color: rgb(12, 210, 232);
+  color: rgb(67, 149, 225);
 }
 
 form {
@@ -556,9 +629,25 @@ form textarea {
   margin: 20px 0 10px;
   resize: none;
 }
+form .submit {
+  background-color: rgb(198, 238, 150);
+  color: rgb(44, 44, 44);
+}
+form .submit:hover, form .submit:focus {
+  background-color: rgb(186, 173, 242);
+  color: white;
+}
+
+.modalForm {
+  width: 80%;
+}
+.modalForm .modalEmail {
+  width: 100%;
+  padding: 20px;
+}
 
 .about {
-  background-color: rgba(189, 188, 186, 0.188);
+  background-color: rgb(44, 44, 44);
   padding-bottom: 0;
 }
 
@@ -598,14 +687,14 @@ form textarea {
 }
 .aboutPosts .aboutPostsImg1 img {
   top: -50px;
-  -webkit-box-shadow: 15px 15px rgb(168, 39, 6), -200px 15px rgb(168, 39, 6);
-          box-shadow: 15px 15px rgb(168, 39, 6), -200px 15px rgb(168, 39, 6);
+  -webkit-box-shadow: 15px 15px rgb(198, 238, 150), -200px 15px rgb(198, 238, 150);
+          box-shadow: 15px 15px rgb(198, 238, 150), -200px 15px rgb(198, 238, 150);
 }
 .aboutPosts .aboutPostsImg2 img {
   bottom: -60px;
   left: -30px;
-  -webkit-box-shadow: 200px 15px rgb(246, 168, 35), 20px 15px rgb(246, 168, 35);
-          box-shadow: 200px 15px rgb(246, 168, 35), 20px 15px rgb(246, 168, 35);
+  -webkit-box-shadow: 200px 15px rgb(176, 167, 168), 20px 15px rgb(176, 167, 168);
+          box-shadow: 200px 15px rgb(176, 167, 168), 20px 15px rgb(176, 167, 168);
 }
 .aboutPosts .aboutPostsContent1 {
   margin-left: 10px;
@@ -620,7 +709,7 @@ form textarea {
 }
 
 .mainNav {
-  background-color: rgba(189, 188, 186, 0.188);
+  background-color: rgb(44, 44, 44);
   padding: 75px 0;
 }
 .mainNav ul {
@@ -641,7 +730,7 @@ form textarea {
   transition: 0.3s;
 }
 .mainNav ul li a:hover, .mainNav ul li a:focus {
-  color: rgb(168, 39, 6);
+  color: rgb(186, 173, 242);
 }
 
 .iconPosition {
@@ -649,7 +738,8 @@ form textarea {
 }
 
 .icon {
-  background-color: rgb(246, 168, 35);
+  background-color: rgb(198, 238, 150);
+  color: rgb(44, 44, 44);
   border-radius: 50%;
   padding: 16px;
   position: absolute;
@@ -658,7 +748,7 @@ form textarea {
 }
 
 .sophiesJourney {
-  background-color: rgba(189, 188, 186, 0.188);
+  background-color: rgb(44, 44, 44);
 }
 .sophiesJourney .journeyFlex {
   display: -webkit-box;
@@ -674,8 +764,8 @@ form textarea {
   margin: 50px;
 }
 .sophiesJourney .journeyImg img {
-  -webkit-box-shadow: 15px 15px rgb(246, 168, 35);
-          box-shadow: 15px 15px rgb(246, 168, 35);
+  -webkit-box-shadow: 15px 15px rgb(186, 173, 242);
+          box-shadow: 15px 15px rgb(186, 173, 242);
 }
 .sophiesJourney .journeyContent {
   width: 70%;
@@ -699,7 +789,7 @@ form textarea {
 }
 
 .contactPage {
-  background-color: rgba(189, 188, 186, 0.188);
+  background-color: rgb(44, 44, 44);
 }
 
 .contactMain {
@@ -746,19 +836,19 @@ form textarea {
   transition: 0.3s;
 }
 .socialsIcons li i:hover, .socialsIcons li i:focus {
-  color: rgb(168, 39, 6);
+  color: rgb(198, 238, 150);
 }
 .socialsIcons li .social {
-  color: rgb(246, 168, 35);
+  color: rgb(186, 173, 242);
   font-size: 28px;
   font-size: 1.4rem;
 }
 
 .blogMain {
-  background-color: rgba(189, 188, 186, 0.188);
+  background-color: rgb(44, 44, 44);
 }
 .blogMain a {
-  color: rgb(40, 94, 100);
+  color: rgb(186, 173, 242);
   font-weight: bold;
   font-style: italic;
 }
@@ -797,10 +887,10 @@ form textarea {
   list-style-position: inside;
 }
 .blogLinks .recentPosts li::marker {
-  color: rgb(246, 168, 35);
+  color: rgb(67, 149, 225);
 }
 .blogLinks .recentPosts li a {
-  color: rgb(44, 44, 44);
+  color: rgb(186, 173, 242);
   font-weight: 400;
   font-style: normal;
 }
@@ -811,7 +901,7 @@ form textarea {
 }
 .blogPageContent .firstPost,
 .blogPageContent .comment2 {
-  border-bottom: 5px solid rgb(246, 168, 35);
+  border-bottom: 5px solid rgb(176, 167, 168);
 }
 .blogPageContent .firstPost {
   padding-top: 10px;
@@ -932,9 +1022,9 @@ form textarea {
     margin-bottom: 0;
   }
   .blogLinks .recentPosts li {
-    list-style-position: inherit;
-    border-bottom: 2px solid rgba(189, 188, 186, 0.188);
-    border-left: 2px solid rgba(189, 188, 186, 0.188);
+    list-style: none;
+    border-bottom: 2px dotted rgb(67, 149, 225);
+    border-left: 2px dotted rgb(67, 149, 225);
     margin-top: 10px;
     padding-left: 10px;
   }
@@ -957,43 +1047,81 @@ form textarea {
     width: 100%;
   }
   .headerNav {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     position: relative;
   }
   .headerNav .burgLogo {
     display: block;
+    z-index: 49;
     position: absolute;
     top: 7px;
-    left: 122px;
+    left: 108px;
+    background-color: white;
   }
   .headerNav .burgLogo a {
     margin-left: 0;
     padding-left: 0;
   }
-  .headerNav label {
-    display: block;
+  .headerNav .burgLogo a:hover, .headerNav .burgLogo a:focus {
+    color: rgb(44, 44, 44);
+    text-decoration: underline;
+  }
+  .headerNav .burgButton {
+    z-index: 49;
+    background-color: white;
+    border: none;
+    margin-right: 30px;
     cursor: pointer;
+    position: absolute;
+    top: 7px;
+    left: 60px;
+  }
+  .headerNav .burgButton .burgMenu {
+    font-size: 1.5rem;
+    color: rgb(44, 44, 44);
+    padding: 20px 10px;
+  }
+  .headerNav #toggleBurg {
+    display: block;
   }
   .headerNav .menu {
-    display: none;
-    width: 40%;
-    margin-left: 75px;
-    margin-bottom: 50px;
+    display: block;
+    visibility: hidden;
+    width: 60%;
+    background: white;
+    padding-top: 80px;
+    padding-left: 60px;
+    padding-bottom: 30px;
+    -webkit-box-shadow: 6px 6px rgb(186, 173, 242);
+            box-shadow: 6px 6px rgb(186, 173, 242);
+    position: absolute;
+    top: 0;
+    left: -100%;
+    z-index: 47;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    border-radius: 0 0 100px 0;
   }
-  .headerNav .menu li {
-    border-bottom: 2px solid black;
+  .headerNav .menu li a {
+    margin: 5px 3px;
+  }
+  .headerNav .menu li a:hover, .headerNav .menu li a:focus {
+    color: rgb(67, 149, 225);
   }
   .headerNav .menu li.logoHide {
     display: none;
   }
-  .headerNav #toggleBurg:checked + .menu {
-    display: block;
+  .headerNav .highlightLink {
+    color: rgb(67, 149, 225);
+  }
+  .headerNav .showMenu {
+    visibility: visible;
+    left: 0;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
   }
   .homepageHeader {
     min-height: 50vh;
+    padding-top: 100px;
   }
   .homepageHeader .homepageHeaderFlex {
     -webkit-box-orient: vertical;
@@ -1095,8 +1223,28 @@ form textarea {
   }
 }
 @media (max-width: 628px) {
+  .modal {
+    width: 300px;
+    height: 400px;
+    top: 15%;
+  }
+  .modal .closeModalButton {
+    margin-right: 45px;
+  }
+  .modal h4 {
+    padding: 0 20px;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .modal p {
+    margin-top: 10px;
+    margin-bottom: 30px;
+  }
   .contactHeader {
     background-position: center;
+  }
+  .headerNav .menu {
+    width: 95%;
   }
   .aboutIntro {
     padding: 20px;
@@ -1157,6 +1305,9 @@ form textarea {
     font-size: 74px;
     font-size: 3.7rem;
     line-height: 1;
+  }
+  .sophiesJourney .journeyContent {
+    padding: 20px 20px 0;
   }
   .blogPageContent .comment .commentAvatar {
     width: 50%;

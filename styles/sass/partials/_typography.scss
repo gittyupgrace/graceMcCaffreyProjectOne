@@ -5,7 +5,7 @@ html {
 body {
     font-family: $mainFont;
     font-size: $bodyFontSize;
-    color: $first;
+    color: $secondaryBackground;
     line-height: 32px;
     letter-spacing: 0;
 }
@@ -39,6 +39,7 @@ h2 {
 .contactHeader h2, 
 .blogHeader h2 {
     @include fontSize(90);
+    color: $white;
 }
 
 h3 {
@@ -53,6 +54,12 @@ h5 {
     @include fontSize(22);
 }
 
+.aboutIntro, 
+.mainNav, 
+.sophiesJourney {
+    color: $white;
+}
+
 ::placeholder {
     font-family: $mainFont;
     font-style: italic;
@@ -61,8 +68,31 @@ h5 {
 
 .button {
     text-align: center;
+    color: $white;
 }
 
 .highlightLink {
-    color: $second;
+    color: $primaryAccent;
+}
+
+.modal {
+    color: $white;
+
+    .closeModalButton {
+        @include fontSize(40);
+        color: $white;
+        font-weight: bold;
+    }
+
+    h4 {
+        font-family: $headerFont;
+        @include fontSize(36);
+        font-weight: bold;
+        letter-spacing: 1px;
+    }
+
+    p {
+        font-weight: bold;
+        font-style: italic;
+    }
 }

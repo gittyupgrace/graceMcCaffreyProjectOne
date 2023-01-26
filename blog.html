@@ -19,16 +19,17 @@
     <a href="#mainContent" class="skipLink">Skip to main content</a>
 
     <nav class="headerNav">
-        <div class="burgLogo">
-            <h1><a href="./index.html" class="logo">Sophie</a></h1>
-        </div>
-        <label for="toggleBurg" class="wrapper"><i class="fa-solid fa-bars burgMenu"></i></label>
-        <input type="checkbox" id="toggleBurg">
+
+            <div class="burgLogo">
+                <h1><a href="./index.html" class="logo">Sophie</a></h1>
+            </div>
+            
+            <button class="burgButton" id="toggleBurg"><i class="fa-solid fa-bars burgMenu"></i></button>
         
         <ul class="menu wrapper">
             <li><a href="./index.html">Home</a></li>
             <li><a href="#aboutSophie">About</a></li>
-            <li class="logoHide"><a href="./index.html" class="logo"><h1>Sophie</h1></a></li>
+            <li class="logoHide"><a href="./index.html" class="logo"><h1>Sophie<span class="sr-only">Sophie</span></h1></a></li>
             <li><a href="./blog.html" class="highlightLink">Blog</a></li>
             <li><a href="./contact.html">Contact</a></li>
         </ul> <!--END of .wrapper-->
@@ -45,7 +46,7 @@
 
             <section class="blogLinks">
                 <div class="blogAbout">
-                    <div><img src="./assets/blog-image-2.jpg" alt="A girl with blonde hair and space buns wearing an orange sweater holds two round slices of orange over her eyes and sticks out her tongue, making a goofy expression."></div>
+                    <div><img src="./assets/home-image-1.png" alt="A woman with long, dark wavy hair looks softly into the camera. She is wearing a white robe and backed by a deep blue sky."></div>
                     <div class="aboutSophie" id="aboutSophie">
                         <h5>About Sophie</h5>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit magni amet voluptate. <a href="#firstPost">Find out more.</a></p>
@@ -85,14 +86,13 @@
 
                 <div class="commentSection">
                     <div class="comment comment1">
-                        <div class="commentAvatar"><img src="./assets/blog-image-3.jpg" alt="A portarit of a man sitting in an orange chair, wearing a navy blue dress shirt with white polka dots."></div>
-                        <div class="commentContent">
+                        <div class="commentAvatar"><img src="./assets/blog-image-3.png" alt="A portarit of a man wearing a black hoodie and tan beanie in front of a green backdrop.">
                             <a href="#">Tuesday October 9th, 2018 by Jeremy</a>
                             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, eos? Magnam, illo quisquam quidem reiciendis culpa aperiam nemo perspiciatis vero voluptas sequi. Repellendus, dignissimos debitis assumenda quas tempora natus necessitatibus esse delectus similique adipisci ducimus.</p>
                         </div>
                     </div>
                     <div class="comment comment2">
-                        <div class="commentAvatar"><img src="./assets/blog-image-4.jpg" alt="A woman with orange hair is wearing sunglasses and leaning with her hands behind her head against a grey wall."></div>
+                        <div class="commentAvatar"><img src="./assets/blog-image-4.png" alt="A woman wearing a brown sweater and black beanie poses with her hands on her head outside in a snowy forest."></div>
                         <div class="commentContent">
                             <a href="#">Wednesday October 10th, 2018 by Julia</a>
                             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, beatae adipisci eligendi ea aut explicabo autem ipsa aspernatur ut veritatis dolores, delectus repellat cupiditate dignissimos!</p>
@@ -122,5 +122,7 @@
     <footer>
         <p>Copyright © 2018 <a href="https://junocollege.com/">HackerYou</a></p>
     </footer> <!--END of footer-->
+    <script src="./scripts/hamburgerScript.js"></script>
+    <script src="./scripts/blogScript.js"></script>
 </body>
 </html>

@@ -17,18 +17,18 @@
 </head>
 <body>
     <a href="#mainContent" class="skipLink">Skip to main content</a>
-    
+   
     <nav class="headerNav">
         <div class="burgLogo">
             <h1><a href="./index.html" class="logo">Sophie</a></h1>
         </div>
-        <label for="toggleBurg" class="wrapper"><i class="fa-solid fa-bars burgMenu"></i></label>
-        <input type="checkbox" id="toggleBurg">
+        
+        <button class="burgButton" id="toggleBurg"><i class="fa-solid fa-bars burgMenu"></i></button>
         
         <ul class="menu wrapper">
             <li><a href="./index.html">Home</a></li>
             <li><a href="./index.html#about">About</a></li>
-            <li class="logoHide"><a href="./index.html" class="logo"><h1>Sophie</h1></a></li>
+            <li class="logoHide"><a href="./index.html" class="logo"><h1>Sophie<span class="sr-only">Sophie</span></h1></a></li>
             <li><a href="./blog.html">Blog</a></li>
             <li><a href="./contact.html" class="highlightLink">Contact</a></li>
         </ul>
@@ -79,5 +79,6 @@
     <footer>
         <p>Copyright © 2018 <a href="https://junocollege.com/">HackerYou</a></p>
     </footer> <!--END of footer-->
+    <script src="./scripts/hamburgerScript.js"></script>
 </body>
 </html>

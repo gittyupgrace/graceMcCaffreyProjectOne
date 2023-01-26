@@ -38,5 +38,6 @@ ul {
     &:hover, 
     &:focus {
         background-color: $primaryBackground;
+        color: $secondaryBackground;
     }
 }
