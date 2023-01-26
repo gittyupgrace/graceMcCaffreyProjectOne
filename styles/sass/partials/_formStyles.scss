@@ -33,6 +33,17 @@ form {
         margin: 20px 0 10px;
         resize: none;
     }
+
+    .submit {
+        background-color: $secondaryAccent;
+        color: $secondaryBackground;
+
+        &:hover, 
+        &:focus{
+            background-color: $fourthAccent;
+            color: $white;
+        }
+    }
 }
 
 

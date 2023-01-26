@@ -2,7 +2,7 @@
     background-color: $secondaryBackground;
 
     a {
-        color: $third;
+        color: $fourthAccent;
         font-weight: bold;
         font-style: italic;
 
@@ -46,11 +46,11 @@
             list-style-position: inside;
 
             &::marker {
-                color: $primaryBackground;
+                color: $primaryAccent;
             }
 
             a {
-                color: $first;
+                color: $fourthAccent;
                 font-weight: 400;
                 font-style: normal;
             }
@@ -65,7 +65,7 @@
 
     .firstPost, 
     .comment2 {
-        border-bottom: 5px solid $primaryBackground;
+        border-bottom: 5px solid $ternaryAccent;
     }
 
     .firstPost {

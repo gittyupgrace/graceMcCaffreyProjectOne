@@ -16,7 +16,7 @@
 
                 &:hover, 
                 &:focus {
-                    color: $secondaryAccent;
+                    color: $fourthAccent;
                 }
             }
         }
@@ -28,7 +28,8 @@
 }
 
 .icon {
-    background-color: $primaryBackground;
+    background-color: $secondaryAccent;
+    color: $secondaryBackground;
     border-radius: 50%;
     padding: 16px;
     position: absolute;

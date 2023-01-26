@@ -26,7 +26,8 @@ modalApp.enterEmail = () => {
 }
 
 modalApp.loadModal = () => {
-    setTimeout(modalApp.openModal(), 2000);
+    // setTimeout(modalApp.openModal(), 2000);
+    modalApp.openModal();
     modalApp.clickClose();
     modalApp.enterEmail();
 }

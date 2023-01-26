@@ -21,8 +21,9 @@
 
     .headerTextPosition {
         position: absolute;
-        top: 30px;
-        left: 0;
+        top: 45px;
+        left: -15px;
+        z-index: -1;
     }
 
     .headerImgPosition {
@@ -33,7 +34,7 @@
         right: 50px;
 
         img {
-            box-shadow: 15px 15px $white;
+            box-shadow: 15px 15px $secondaryAccent;
         }
     }
 }
@@ -41,11 +42,11 @@
 //Contact Page + Blog Page Header Styling
 
 .contactHeader {
-    background-image: url(../assets/contact-image-1.jpg);
+    background-image: url(../assets/contact-image-1.png);
 }
 
 .blogHeader {
-    background-image: url(../assets/blog-image-1.jpg);
+    background-image: url(../assets/blog-image-1.png);
 }
 
 .contactHeader, 
