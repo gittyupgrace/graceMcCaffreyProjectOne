@@ -914,11 +914,11 @@ form .submit:hover, form .submit:focus {
   border-bottom: 5px solid rgb(176, 167, 168);
 }
 .blogPageContent .comment .commentAvatar {
-  width: calc(15% - 15px);
+  min-width: calc(15% - 15px);
   margin-right: 15px;
 }
 .blogPageContent .comment .commentContent {
-  width: calc(85% - 10px);
+  min-width: calc(85% - 10px);
   margin-left: 10px;
 }
 
@@ -1050,18 +1050,17 @@ form .submit:hover, form .submit:focus {
   }
   .headerNav {
     position: relative;
+    background-color: white;
   }
   .headerNav .burgLogo {
     display: block;
     z-index: 49;
-    position: absolute;
-    top: 7px;
-    left: 108px;
     background-color: white;
   }
   .headerNav .burgLogo a {
     margin-left: 0;
     padding-left: 0;
+    margin-right: 40px;
   }
   .headerNav .burgLogo a:hover, .headerNav .burgLogo a:focus {
     color: rgb(44, 44, 44);
@@ -1075,12 +1074,12 @@ form .submit:hover, form .submit:focus {
     cursor: pointer;
     position: absolute;
     top: 7px;
-    left: 60px;
+    left: 20px;
   }
   .headerNav .burgButton .burgMenu {
     font-size: 1.5rem;
     color: rgb(44, 44, 44);
-    padding: 20px 10px;
+    padding: 15px 10px;
   }
   .headerNav #toggleBurg {
     display: block;
@@ -1300,7 +1299,7 @@ form .submit:hover, form .submit:focus {
     height: 145px;
   }
   .blogHeader {
-    background-position: -613px;
+    background-position: -325px;
   }
   .blogHeader h2,
   .contactHeader h2 {
