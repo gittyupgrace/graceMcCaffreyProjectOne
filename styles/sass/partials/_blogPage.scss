@@ -63,8 +63,7 @@
     min-width: calc(65% - 20px);
     margin-left: 20px;
 
-    .firstPost, 
-    .comment2 {
+    .firstPost {
         border-bottom: 5px solid $ternaryAccent;
     }
 
@@ -75,12 +74,16 @@
     .comment {
         display: flex;
 
+        &:nth-child(even) {
+            border-bottom: 5px solid $ternaryAccent;
+        }
+
         .commentAvatar {
-                min-width: calc(15% - 15px);
+                width: calc(15% - 15px);
                 margin-right: 15px;
             }
         .commentContent {
-            min-width: calc(85% - 10px);
+            width: calc(85% - 10px);
             margin-left: 10px;
         }
 

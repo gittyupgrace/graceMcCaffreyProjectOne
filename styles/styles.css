@@ -899,8 +899,7 @@ form .submit:hover, form .submit:focus {
   min-width: calc(65% - 20px);
   margin-left: 20px;
 }
-.blogPageContent .firstPost,
-.blogPageContent .comment2 {
+.blogPageContent .firstPost {
   border-bottom: 5px solid rgb(176, 167, 168);
 }
 .blogPageContent .firstPost {
@@ -911,12 +910,15 @@ form .submit:hover, form .submit:focus {
   display: -ms-flexbox;
   display: flex;
 }
+.blogPageContent .comment:nth-child(even) {
+  border-bottom: 5px solid rgb(176, 167, 168);
+}
 .blogPageContent .comment .commentAvatar {
-  min-width: calc(15% - 15px);
+  width: calc(15% - 15px);
   margin-right: 15px;
 }
 .blogPageContent .comment .commentContent {
-  min-width: calc(85% - 10px);
+  width: calc(85% - 10px);
   margin-left: 10px;
 }
 
@@ -941,7 +943,7 @@ form .submit:hover, form .submit:focus {
         align-self: center;
   }
   .contactHeader,
-.blogHeader {
+  .blogHeader {
     background-position: center;
   }
   .aboutIntro {
@@ -971,12 +973,12 @@ form .submit:hover, form .submit:focus {
     margin-top: 75px;
   }
   .aboutPosts .aboutPostsImg1,
-.aboutPosts .aboutPostsImg2 {
+  .aboutPosts .aboutPostsImg2 {
     margin-right: 0;
     position: static;
   }
   .aboutPosts .aboutPostsImg1 img,
-.aboutPosts .aboutPostsImg2 img {
+  .aboutPosts .aboutPostsImg2 img {
     position: static;
   }
   .aboutPosts .aboutPostsContent1 {
@@ -1186,7 +1188,7 @@ form .submit:hover, form .submit:focus {
             flex-direction: column;
   }
   .blogLinks .blogAbout,
-.blogLinks .recentPosts {
+  .blogLinks .recentPosts {
     min-width: 100%;
   }
   .blogLinks .recentPosts {
@@ -1301,7 +1303,7 @@ form .submit:hover, form .submit:focus {
     background-position: -613px;
   }
   .blogHeader h2,
-.contactHeader h2 {
+  .contactHeader h2 {
     font-size: 74px;
     font-size: 3.7rem;
     line-height: 1;
