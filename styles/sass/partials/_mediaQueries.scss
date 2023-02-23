@@ -151,18 +151,17 @@
 
     .headerNav {
         position: relative;
+        background-color: $white;
 
         .burgLogo {
             display: block;
             z-index: 49;
-            position: absolute;
-            top: 7px;
-            left: 108px;
             background-color: $white;
             
             a {
                 margin-left: 0;
                 padding-left: 0;
+                margin-right: 40px;
 
                 &:hover,
                 &:focus {
@@ -180,12 +179,12 @@
             cursor: pointer;
             position: absolute;
             top: 7px;
-            left: 60px;
+            left: 20px;
 
             .burgMenu {
                 font-size: 1.5rem;
                 color: $secondaryBackground;
-                padding: 20px 10px;
+                padding: 15px 10px;
             }
         }
 
@@ -464,7 +463,7 @@
     }
 
     .blogHeader {
-        background-position: -613px;
+        background-position: -325px;
     }
 
     .blogHeader, 
